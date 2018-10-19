@@ -1,0 +1,38 @@
+/* Global Styling. */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #076496;
+    display: inline-block;
+}
+
+.navigation a {
+    float: left;
+    background-color: #076496;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    background-color: #3B90BE;
+    color: white;
+}
+
+.navigation a.on {
+    background-color: #054D74;
+    color: white;
+}
+/* Global Styling End */
