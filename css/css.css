@@ -220,20 +220,72 @@ nav ul li ul li, nav ul li ul li a {
 
 .hub_container > div{
     margin: 1rem auto;
-    width: 100%;
-    height: 30%;
     position: relative;
+    display: flex;
 }
 
 .upper_third {
     background-color: red;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
 }
 
 .middle_third {
     background-color: blue;
+    width: 100%;
+    height: 10%;
+    justify-content: space-evenly;
 }
 
 .lower_third {
     background-color: green;
+    width: 100%;
+    height: 40%;
+}
+
+#featured_lessons {
+    border: 1px solid black;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+#featured_lessons img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#featured_lessons img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#featured_lessons p {
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    left: 4%;
+    font-size: 20px;
+}
+
+.middle_third > button {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: #076496;
+    border: 0px solid #076496;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.middle_third > button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
 }
 /* End Guitar Hub Styling */
