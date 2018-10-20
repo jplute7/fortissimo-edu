@@ -210,3 +210,30 @@ nav ul li ul li, nav ul li ul li a {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 /* End Home Post-Login Styling */
+
+/* Guitar Hub Styling */
+.hub_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hub_container > div{
+    margin: 1rem auto;
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.upper_third {
+    background-color: red;
+}
+
+.middle_third {
+    background-color: blue;
+}
+
+.lower_third {
+    background-color: green;
+}
+/* End Guitar Hub Styling */
