@@ -9,14 +9,47 @@
 
     <body>
         <!-- Navigation Bar -->
-        <div class="navigation">
-            <a class="on">Home</a>
-            <a>My Lessons</a>
-            <a>Tuner</a>
-            <a>Favorites</a>
-            <a>Instruments</a>
-            <a>Classes</a>
-        </div>
+        <nav role="navigation">
+                <ul>
+                    <li id="active"><a href="#">Home</a></li>
+                    <li><a href="#">My Lessons</a></li>
+                    <li><a href="#">Tuner</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Instruments</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Hand Positioning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Check Pads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Learn Chords</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Timing Test</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </nav>
 
         <!-- Home Content -->
         <div class="home_content">

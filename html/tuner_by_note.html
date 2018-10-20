@@ -4,62 +4,100 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/css.css">
-        <title>Landing Page</title>
+        <title>Tuner</title>
     </head>
 
     <body>
         <!-- Navigation Bar -->
-        <div class="navigation">
-            <a>Home</a>
-            <a>My Lessons</a>
-            <a class="on">Tuner</a>
-            <a>Favorites</a>
-            <a>Instruments</a>
-            <a>Classes</a>
-        </div>
+        <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lesson_home.html">Learning Hub</a></li>
+                    <li id="active"><a href="#">Tuner</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Instruments</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Hand Positioning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Check Pads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Learn Chords</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Timing Test</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </nav>
 
-        <!-- Home Content -->
+        <!-- Tuner By Note Content -->
         <div class="tuner_content">
-            <p class="title">Tuner</p>
-            <p class = directions> Directions: The "Auto Detect" function detects what you are playing and tunes you to the nearest note.
-                The "By Note" function lets you choose a specific note, and tune to that.
-            </p>
-            <div class="tuner_view">
-                <div class="select">
-                    <label class="selectButtonAuto">
-                        <input type="radio" name="auto" value="Auto Detect" class="radiobttn"> Auto Detect
-                    </label>
-                    <label class=selectButtonByNote>
-                        <input type="radio" name="auto" value="By Note" checked="checked" class="radiobttn"> By Note
-                    </label>
-                    <label>
-                        <select>
-                            <option value="A">A</option>
-                            <option value="B-flat">B-flat</option>
-                            <option value="C">C</option>
-                            <option value="C-Sharp">C-Sharp</option>
-                            <option value="D">D</option>
-                            <option value="E-flat">E-flat</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                            <option value="F-sharp">F-Sharp</option>
-                            <option value="G">G</option>
-                            <option value="G-sharp">G-flat</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="tuner_function">
-                    <p class="note">A</p>
-                </div>
-                <div class="sound_indicator">
-                    <p class="input">Input Strength</p>
-                    <img class="indicator_image" height="2" src="../assets/images/soundMeter.PNG">
-                </div>
-                <div class="pitch_indicator">
+            <div class="colorContainer">
+                <p class="title">Tuner</p>
+                <p class = directions> Directions: The "Auto Detect" function detects what you are playing and tunes you to the nearest note.
+                    <br>The "By Note" function lets you choose a specific note, and tune to that.
+                </p>
+
+                <div class="color_separator"><br></div>
+                <div class="tuner_view">
+                    <div class="select">
+                        <label class="selectButtonAuto">
+                            <input type="radio" name="auto" value="Auto Detect" class="radiobttn"> Auto Detect
+                        </label>
+                        <label class=selectButtonByNote>
+                            <input type="radio" name="auto" value="By Note" checked="checked" class="radiobttn"> By Note
+                        </label>
+                        <label>
+                            <select>
+                                <option value="A">A</option>
+                                <option value="B-flat">B-flat</option>
+                                <option value="C">C</option>
+                                <option value="C-Sharp">C-Sharp</option>
+                                <option value="D">D</option>
+                                <option value="E-flat">E-flat</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F-sharp">F-Sharp</option>
+                                <option value="G">G</option>
+                                <option value="G-sharp">G-flat</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="tuner_function">
+                        <p class="note">A</p>
+                    </div>
+                    <div class="sound_indicator">
+                        <p class="input">Input Strength</p>
+                        <img class="indicator_image" height="2" src="../assets/images/soundMeter.PNG">
+                    </div>
+                    <div class="pitch_indicator">
                         <p class="input">Pitch Indicator</p>
                         <img class="indicator_image" src="../assets/images/tuner.PNG">
                     </div>
             </div>
+        </div>
+            
 
             
         </div>
