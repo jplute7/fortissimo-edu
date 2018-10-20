@@ -196,6 +196,8 @@ nav ul li ul li, nav ul li ul li a {
     transition: 0.3s;
     text-align: center;
     position: relative;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
 
 #top_column img, #bot_column img {
@@ -204,6 +206,8 @@ nav ul li ul li, nav ul li ul li a {
     height: 100%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
 
 #top_column div:hover, #bot_column div:hover {
@@ -212,6 +216,28 @@ nav ul li ul li, nav ul li ul li a {
 /* End Home Post-Login Styling */
 
 /* Guitar Hub Styling */
+.featured_arrow {
+    text-align: center;
+    margin: auto 1rem;
+    width: 5%;
+}
+
+.featured_arrow > button {
+    border: 0px solid white;
+    background: #076496;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+.featured_arrow > button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
 .hub_container {
     position: absolute;
     width: 100%;
@@ -225,31 +251,59 @@ nav ul li ul li, nav ul li ul li a {
 }
 
 .upper_third {
-    background-color: red;
     justify-content: center;
     width: 100%;
     height: 40%;
 }
 
 .middle_third {
-    background-color: blue;
     width: 100%;
     height: 10%;
     justify-content: space-evenly;
 }
 
 .lower_third {
-    background-color: green;
     width: 100%;
     height: 40%;
+    justify-content: space-between;
+}
+
+#care_for_guitar {
+    border: 1px solid #076496;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    margin: 0 1rem;
+    background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#daily_guitar_challenge {
+    border: 1px solid #076496;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    margin: 0 1rem;
+    background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#care_for_guitar:hover, #daily_guitar_challenge:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #featured_lessons {
-    border: 1px solid black;
+    border: 1px solid #076496;
     display: inline-block;
     height: 100%;
     width: 50%;
-    position: absolute;
+    position: relative;
 }
 
 #featured_lessons img {
@@ -258,6 +312,8 @@ nav ul li ul li, nav ul li ul li a {
     height: 100%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
 
 #featured_lessons img:hover {
