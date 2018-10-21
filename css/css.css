@@ -326,6 +326,13 @@ Learning Hub Page Styling
     height: 10%;
     outline: black solid .5px;
     vertical-align: middle;
+    transition: .4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: .5px solid #076496;
+}
+.lessons .lesson_box:hover {
+    background-color: rgb(99, 173, 212);
+    transition: .4s;
 }
 .lesson_box .lb_left{
     display: inline-block;
@@ -356,6 +363,196 @@ Learning Hub Page Styling
 
 /* 
 /////////////////////
-Learning Hub Page Styling
+Example Lesson Page Styling
 /////////////////////
 */
+.lesson_example{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+.lesson_example #top {
+    margin: 1rem auto;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lesson_example #top .chapter {
+    margin: 1rem;
+    height: 90%;
+    width: 15%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid #076496;
+    transition: 0.3s;
+    text-align: right;
+    position: relative;
+    background-color: gray;
+}
+.lesson_example #top .chapter .main{
+    width: 100.5%;
+    height: 13.7%;
+    text-align: center;
+    background-color: #3B90BE;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: .5px solid #076496;
+    vertical-align: middle;
+    display: table;
+}
+.lesson_example #top .chapter .sub:hover, .lesson_example #top .chapter .main:hover{
+    background-color: rgb(99, 173, 212);
+    transition: .4s;
+}
+
+.lesson_example #top .chapter .sub{
+    width: 70.2%;
+    height: 11%;
+    text-align: center;
+    background-color: #3B90BE;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: .5px solid #076496;
+    vertical-align: middle;
+    display: table;
+    margin-left: 30%;
+}
+.lesson_example #top .chapter p{
+    vertical-align: middle;
+    display: table-cell;
+    color:whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.lesson_example #top .video {
+    border: 1px solid #076496;
+    margin: 1rem;
+    height: 90%;
+    width: 40%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    position: relative;
+}
+.lesson_example #top .video #thumbnail {
+    width: 100%;
+    height: 100%
+}
+.lesson_example #top .directions {
+    margin: 1rem;
+    height: 90%;
+    width: 48%;
+    display: inline-block;
+    position: relative;
+}
+.lesson_example #top .directions #lessontitle{
+    margin-left: 2%;
+    font-size: 300%;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.lesson_example #top .directions #dirTitle{
+    margin-left: 2%;
+    font-size: 150%;
+}
+.lesson_example #top .directions #dir{
+    margin-left: 2%;
+    font-size: 120%;
+}
+.lesson_example #musicControlContainer{
+    height: 3%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+.lesson_example #musicControlContainer button{
+    height: 100%;
+    width: 5%;
+    text-align: center;
+    background-color: #3B90BE;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 88%;
+}
+.lesson_example #musicControlContainer button:hover{
+    transition: .4s;
+    background-color: rgb(99, 173, 212);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.lesson_example #sheetMusic{
+    height: 37%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: .5%;
+    outline: 1px solid black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.lesson_example #sheetMusic img{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.lesson_example #bottomdiv{
+    height: 5%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #3B90BE;
+}
+.lesson_example #bottomdiv #acc{
+    display: inline-block;
+    height: 90%;
+    width: 50%;
+    margin: .5%;
+}
+.lesson_example #bottomdiv #acc input{
+    size: 150%
+}
+
+.lesson_example #bottomdiv #acc{
+    display: inline-block;
+    height:100%;
+    width: 50%;
+    margin: .5%;
+}
+.lesson_example #bottomdiv #tempo{
+    text-align: right;
+    display: inline-block;
+    height: 100%;
+    width: 45%;
+    margin: .5%;
+}
+.lesson_example #bottomdiv #tempo .sliderContainer{
+    text-align: right;
+    display: inline-block;
+    height: 85%;
+    width: 50%;
+    margin: .5%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 20%;
+    border-radius: 10%;   
+    background: #eeeeee;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: rgb(4, 65, 97);
+    cursor: pointer;
+}
+

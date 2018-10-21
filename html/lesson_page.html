@@ -1,0 +1,123 @@
+<!-- Lesson Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Learning Hub</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lesson_home.html">Learning Hub</a></li>
+                    <li><a href="tuner_by_note.html">Tuner</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Instruments</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Hand Positioning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Check Pads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Learn Chords</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Timing Test</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </nav>
+
+        <!-- Lesson Content -->
+        <div class="lesson_example">
+            <div id="top">
+                <div class="chapter">
+                    <div class="main">
+                        <p>Chapter 1</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 2</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 3</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 4</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 5</p>
+                    </div>
+                    <div class="sub">
+                        <p>5a</p>
+                    </div>
+                    <div class="sub">
+                        <p>5b</p>
+                    </div>
+                    <div class="sub">
+                        <p>5c</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="../assets/images/video-thumbnail.jpg" id="thumbnail">
+                </div>
+                <div class="directions">
+                    <P id="lessontitle">Lesson: Example 123</P>
+                    <p id="dirTitle">Directions:</p>
+                    <P id="dir">These are the directions for the lesson. They change based on what is happening in
+                        the interactive video to the left. This will instruct users, give tips, and assist in
+                        the lesson. The music below changes based on what the lesson is doing. The music moves
+                        as the student is playing and hilights trouble spots.
+                    </P>
+                </div>
+            </div>
+            <div id="musicControlContainer">
+                    <button type="button">Play</button>
+                    <button type="button">Stop</button>
+                    <button type="button">Restart</button>
+            </div>
+            <div id="sheetMusic">
+                    <img src="../assets/images/sheetMusic.jpg">
+            </div>
+            <div id="bottomdiv">
+                <span id="acc">
+                    <label class="container">Music Accompaniment
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </span>
+                <span id="tempo">
+                    <span id="tempoNum">120</span>
+                    <span id="sliderContainer">
+                            <input type="range" min="30" max="240" value="120" class="slider">
+                    </span>
+                        
+                </span>
+                    
+            </div>
+        </div>
+        
+    </body>
+</html>
