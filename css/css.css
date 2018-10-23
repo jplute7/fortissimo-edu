@@ -800,3 +800,145 @@ Test Styling
     background-color: rgb(0, 189, 63);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
 }
+
+/* REMOVE */
+.featured_arrow {
+    text-align: center;
+    margin: auto 1rem;
+    width: 5%;
+}
+
+.featured_arrow > button {
+    border: 0px solid white;
+    background: #076496;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+.featured_arrow > button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.hub_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hub_container > div{
+    margin: 1rem auto;
+    position: relative;
+    display: flex;
+}
+
+.upper_third {
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.middle_third {
+    width: 100%;
+    height: 10%;
+    justify-content: space-evenly;
+}
+
+.lower_third {
+    width: 100%;
+    height: 40%;
+    justify-content: space-between;
+}
+
+#care_for_guitar {
+    border: 1px solid #076496;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    margin: 0 1rem;
+    background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#daily_guitar_challenge {
+    border: 1px solid #076496;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    margin: 0 1rem;
+    background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#care_for_guitar img:hover, #daily_guitar_challenge img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#care_for_guitar img, #daily_guitar_challenge img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#featured_lessons {
+    border: 1px solid #076496;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+#featured_lessons img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#featured_lessons img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#featured_lessons p {
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    left: 4%;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+.middle_third > button {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: #076496;
+    border: 0px solid #076496;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.middle_third > button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+/* END REMOVE */
