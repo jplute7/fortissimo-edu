@@ -1,0 +1,116 @@
+<!-- Lesson Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Testing Center</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lesson_home.html">Learning Hub</a></li>
+                    <li><a href="tuner_by_note.html">Tuner</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Instruments</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Hand Positioning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Check Pads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Learn Chords</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                            <ul class="dropdown subdropdown">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Timing Test</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </nav>
+
+        <!-- Test Content -->
+        <div id="test_content">
+            <P id="main_title">Testing Center</P>
+            <div id="test_form">
+                <P id="main_title">Instructor Test 2</P>
+                <div id="instructions">
+                    <p id="i_title">Instructions:</p>
+                    <p id="i_info"> You will have 55 minutes to take this test. After the time runs out, any unfinished 
+                        answers will be marked as incorrect. This test is worth 150 points and is 25% of your overall
+                        class grade. If you get stuck on a piece of the test, move on to the next question and come back
+                        to it later.
+                    </p>
+                </div>
+                <div id="mult">
+                    <p id="q">This is a multipe choice questions. The question will be displayed here and
+                        the answer may be selected below. Example: Which letter is the first in the alphabet?
+                    </p>
+                    <div id="radios">
+                        <label class="container">A
+                            <input type="radio"1 name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">B
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">C
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">D
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="short_ans">
+                    <p id="q">This is short answer question. The question will be displayed here and
+                        the answer may be typed below. Example: Why do we do X in Y way?
+                    </p>
+                    <form>
+                        <textarea>Type your answer here...</textarea>
+                    </form>
+                </div>
+                <div id="play_test">
+                    <div id="musicControlContainer">
+                        <button type="button">Record</button>
+                        <button type="button">Stop</button>
+                        <button type="button">Play Recording</button>
+                        <button type="button">Restart</button>
+                    </div>
+                    <div id="sheetMusic">
+                        <img src="../assets/images/sheetMusicShort.jpg">
+                    </div>
+                </div>
+                <div id="submit">
+                    <a href="lesson_home.html">Submit Lesson</a>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
