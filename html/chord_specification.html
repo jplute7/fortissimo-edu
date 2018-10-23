@@ -1,0 +1,102 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="specific_chord_view">
+            <div class="chord_box">
+                <div class="vertical_container">
+                    <div class="chord_img">
+                        <img src="../assets/images/C_Major_Chord.png">
+                    </div>
+                    <div class="play_chord_btn">
+                        <button id="play_chord">Play!</button>
+                    </div>
+                    <div class="audio_controls">
+                        <p>Vol: </p>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                    <div class="chord_switch_box">
+                        <button id="back"><</button>
+                        <button id="forward">></button>
+                    </div>
+                </div>
+            </div>
+            <div class="audio_interface">
+                <div class="vertical_container">
+                    <div class="audio_comparison">
+                        <p>This will eventually change...</p>
+                    </div>
+                    <div class="score_indicator">
+                        <p>Score text is placed here...</p>
+                    </div>
+                    <div class="listening_controls">
+                        <button>Listen</button>
+                        <button>Stop Listening</button>
+                        <button>Save Listen Session</button>
+                    </div>
+                    <div class="mic_controls">
+                        <div class="mic_select">
+                            <select>
+                                <option value="0">Default Input Device</option>
+                                <option value="1">Microphone - Realtek Audio</option>
+                                <option value="2">Transmit - Plantronics Savi 7xx-M</option>
+                                <option value="3">Microphone - Razer Kraken</option>
+                            </select>
+                        </div>
+                        <button>Mute</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

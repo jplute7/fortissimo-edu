@@ -11,13 +11,13 @@
         <!-- Navigation Bar -->
         <nav role="navigation">
             <ul>
-                <li id="active"><a href="#">Home</a></li>
-                <li><a href="#">My Lessons</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
                 <li><a href="#">Tuner</a></li>
                 <li><a href="#">Favorites</a></li>
-                <li><a href="#">Instruments</a>
+                <li id="active"><a href="#">Instruments</a>
                 <ul class="dropdown">
-                    <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
@@ -31,11 +31,11 @@
                             <li><a href="#">Check Pads</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
-                            <li><a href="#">Learn Chords</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
@@ -58,8 +58,10 @@
                     <button><</button>
                 </div>
                 <div id="featured_lessons">
-                    <img src="../assets/images/featured_lesson_guitar.jpg">
+                    <img class="main_image" src="../assets/images/featured_lesson_guitar.jpg">
                     <p>Check out this new featured video!</p>
+                    <img class="secondary_image_1" src="../assets/images/featured_lesson_guitar_2.jpg">
+                    <img class="secondary_image_2" src="../assets/images/featured_lesson_guitar_3.jpg">
                 </div>
                 <div class="featured_arrow">
                     <button>></button>
@@ -67,7 +69,7 @@
             </div>
             <div class="middle_third">
                 <button>Videos</button>
-                <button>Learn New Chords!</button>
+                <button onclick="location.href='chord_overview.html'">Learn New Chords!</button>
                 <button>Lessons</button>
             </div>
             <div class="lower_third">

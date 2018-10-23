@@ -58,7 +58,7 @@ nav ul li ul {
     margin-top: 1rem;
     display: none;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     list-style-type: none;
     text-align: left;
     padding: 0;
@@ -92,6 +92,10 @@ nav ul li ul li, nav ul li ul li a {
 
 #active {
     background: #054D74;
+}
+
+button:hover {
+    cursor: pointer;
 }
 /* Global Styling End */
 
@@ -217,9 +221,10 @@ nav ul li ul li, nav ul li ul li a {
 
 /* Guitar Hub Styling */
 .featured_arrow {
-    text-align: center;
+    text-align: end;
     margin: auto 1rem;
     width: 5%;
+    position: relative;
 }
 
 .featured_arrow > button {
@@ -231,6 +236,7 @@ nav ul li ul li, nav ul li ul li a {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     width: 100%;
+    margin: 400% 0 0 0;
 }
 
 .featured_arrow > button:hover {
@@ -316,7 +322,7 @@ nav ul li ul li, nav ul li ul li a {
     position: relative;
 }
 
-#featured_lessons img {
+#featured_lessons .main_image {
     display: block;
     position: relative;
     height: 100%;
@@ -324,10 +330,43 @@ nav ul li ul li, nav ul li ul li a {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
+    z-index: 2;
 }
 
-#featured_lessons img:hover {
+#featured_lessons .main_image:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#featured_lessons .secondary_image_1 {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+    height: 60%;
+    width: 60%;
+    bottom: 30%;
+    left: 80%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#featured_lessons .secondary_image_2 {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+    height: 60%;
+    width: 60%;
+    bottom: 30%;
+    right: 80%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#featured_lessons .secondary_image_1:hover, #featured_lessons .secondary_image_2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
 #featured_lessons p {
@@ -336,6 +375,7 @@ nav ul li ul li, nav ul li ul li a {
     bottom: 2%;
     left: 4%;
     font-size: 20px;
+    z-index: 2;
 }
 
 .middle_third > button {
@@ -501,3 +541,289 @@ nav ul li ul li, nav ul li ul li a {
     cursor: pointer;
 }
 /* End Chord Overview Styling */
+
+/* Specific Chord Styling */
+.specific_chord_view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.chord_box {
+    background: red;
+    width: 30%;
+    height: 91%;
+    position: relative;
+    display: flex;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.chord_box .vertical_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;;
+}
+
+.chord_box .chord_img {
+    /* background: yellow; */
+    background: whitesmoke;;
+    width: 95%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.chord_box .chord_img img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.chord_box .play_chord_btn {
+    /* background: magenta; */
+    width: 95%;
+    height: 5%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+.chord_box .play_chord_btn #play_chord {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+}
+
+.chord_box .play_chord_btn #play_chord:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.chord_box .audio_controls {
+    /* background: salmon; */
+    width: 95%;
+    height: 7%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+.chord_box .audio_controls p {
+    color: black;
+    margin-left: 3%;
+    width: 10%;
+}
+
+.chord_box .audio_controls .slider:hover {
+    opacity: 1.0;
+}
+
+.chord_box .audio_controls .slider {
+    -webkit-appearance: none;
+    width: 82%;
+    height: 15px;
+    border-radius: 5px;   
+    background: whitesmoke;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: auto 0;
+    margin-left: 2%;
+}
+
+.chord_box .audio_controls .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #076496;
+    cursor: pointer;
+}
+
+.chord_box .audio_controls .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #076496;
+    cursor: pointer;
+}
+
+.chord_box .chord_switch_box {
+    /* background: skyblue; */
+    width: 95%;
+    height: 5%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.chord_box .chord_switch_box button {
+    width: 45%;
+    height: 95%;
+    margin: auto 0;
+    position: relative;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+}
+
+.chord_box .chord_switch_box button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+#back {
+    text-align: left;
+}
+
+#forward {
+    text-align: right;
+}
+
+.audio_interface {
+    background: green;
+    width: 68%;
+    height: 91%;
+    position: relative;
+    display: flex;
+    margin-top: 1%;
+}
+
+.audio_interface .vertical_container {
+    background: palegreen;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.audio_interface .audio_comparison {
+    width: 95%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    background: orangered;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.audio_interface .score_indicator {
+    width: 95%;
+    height: 7%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.audio_interface .listening_controls {
+    width: 95%;
+    height: 7%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    /* background: darkcyan; */
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+
+.audio_interface .listening_controls button {
+    width: 30%;
+    height: 100%;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+}
+
+.audio_interface .listening_controls button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.audio_interface .mic_controls {
+    width: 95%;
+    height: 7%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    /* background: gray; */
+    justify-content: space-evenly;
+}
+
+.audio_interface .mic_controls .mic_select {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #076496;
+}
+
+.audio_interface .mic_controls .mic_select select {
+    background: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.audio_interface .mic_controls .mic_select select:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.audio_interface .mic_controls button {
+    width: 20%;
+    height: 100%;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+}
+
+.audio_interface .mic_controls button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+/* End Specific Chord Styling */
