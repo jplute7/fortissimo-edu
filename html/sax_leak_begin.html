@@ -1,4 +1,4 @@
-<!-- Tuner Page -->
+<!-- Leak Begin Page -->
 
 <!DOCTYPE html>
 <html>
@@ -51,53 +51,42 @@
             </ul>
         </nav>
 
-        <!-- Tuner By Note Content -->
-        <div class="tuner_content">
-            <div class="colorContainer">
-                <p class="title">Tuner</p>
-                <p class = directions> Directions: The "Auto Detect" function detects what you are playing and tunes you to the nearest note.
-                    <br>The "By Note" function lets you choose a specific note, and tune to that.
+        <!-- SLB Content -->
+        <div id="slbcolor">
+            <div id='slb_content'>
+                <p id="title">Saxophone Leaky Pad Detector</p>
+                <p id="directions">Play through the displayed scales at a low volume. After all scales are played, the leaky pads will 
+                    be displayed to you.
                 </p>
-
-                <div class="color_separator"><br></div>
-                <div class="tuner_view">
-                    <div class="select">
-                        <label class="selectButtonAuto">
-                            <input type="radio" name="auto" value="Auto Detect" class="radiobttn"> Auto Detect
-                        </label>
-                        <label class=selectButtonByNote>
-                            <input type="radio" name="auto" value="By Note" checked="checked" class="radiobttn"> By Note
-                        </label>
-                        <label>
-                            <select>
-                                <option value="A">A</option>
-                                <option value="B-flat">B-flat</option>
-                                <option value="C">C</option>
-                                <option value="C-Sharp">C-Sharp</option>
-                                <option value="D">D</option>
-                                <option value="E-flat">E-flat</option>
-                                <option value="E">E</option>
-                                <option value="F">F</option>
-                                <option value="F-sharp">F-Sharp</option>
-                                <option value="G">G</option>
-                                <option value="G-sharp">G-flat</option>
-                            </select>
-                        </label>
+                <div id="scales">
+                    <div id="scalenum">
+                        <span id="complete">1</span>
+                        <span id="complete">2</span>
+                        <span id="complete">3</span>
+                        <span id="incomplete">4</span>
+                        <span id="incomplete">5</span>
                     </div>
-                    <div class="tuner_function">
-                        <p class="note">A</p>
+                    <div id="rdg_contain">
+                        <img src="../assets/images/recording.png" id="recording">
                     </div>
-                    <div class="sound_indicator">
-                        <p class="input">Input Strength</p>
-                        <img class="indicator_image" height="2" src="../assets/images/soundMeter.PNG">
+                    <div id="scale_notes">
+                        <span id="notes">B-flat</span>
+                        <span id="notes">C</span>
+                        <span id="notes">D</span>
+                        <span id="notes">E-flat</span>
+                        <span id="notes">F</span>
+                        <span id="notes">G</span>
+                        <span id="notes">A</span>
+                        <span id="notes">B-flat</span>
                     </div>
-                    <div class="pitch_indicator">
-                        <p class="input">Pitch Indicator</p>
-                        <img class="indicator_image" src="../assets/images/tuner.PNG">
-                    </div>
+                </div>
+                <div id="bttn_center">
+                    <button onclick="location.href='sax_leak_display_pads.html'">Get Results!</button>
+                </div>
+                
             </div>
         </div>
-            
+        
 
             
         </div>

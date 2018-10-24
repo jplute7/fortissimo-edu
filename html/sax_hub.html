@@ -1,4 +1,4 @@
-<!-- Lesson Page -->
+<!-- Sax Hub Page -->
 
 <!DOCTYPE html>
 <html>
@@ -11,31 +11,31 @@
         <!-- Navigation Bar -->
         <nav role="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="lesson_home.html">Learning Hub</a></li>
                 <li><a href="tuner_by_note.html">Tuner</a></li>
                 <li><a href="#">Favorites</a></li>
-                <li><a href="#">Instruments</a>
+                <li id="active"><a href="#">Instruments</a>
                 <ul class="dropdown">
-                    <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
                             <li><a href="#">Hand Positioning</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li id="active"><a href="sax_hub.html">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
                             <li><a href="#">Check Pads</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
-                            <li><a href="#">Learn Chords</a></li>
+                            <li id="active"><a href="chord_overview.html">Learn Chords</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
@@ -58,8 +58,10 @@
                     <button><</button>
                 </div>
                 <div id="featured_lessons">
-                    <img src="../assets/images/sax.jpg">
+                    <img class="main_image" src="../assets/images/sax2.jpg">
                     <p>Check out this new featured video!</p>
+                    <img class="secondary_image_1" src="../assets/images/sax3.jpg">
+                    <img class="secondary_image_2" src="../assets/images/sax.jpg">
                 </div>
                 <div class="featured_arrow">
                     <button>></button>
@@ -67,8 +69,8 @@
             </div>
             <div class="middle_third">
                 <button>Videos</button>
-                <button>Leak Detector</button>
-                <button>Lessons</button>
+                <button onclick="location.href='chord_overview.html'">Leak Detector</button>
+                <button onclick="location.href='lesson_shops.html'">Lessons</button>
             </div>
             <div class="lower_third">
                 <div id="care_for_guitar">

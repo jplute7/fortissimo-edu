@@ -40,6 +40,8 @@ nav ul li {
     position: relative;
     text-decoration: none;
     height: 100%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
 
 nav ul li:hover {
@@ -56,7 +58,7 @@ nav ul li ul {
     margin-top: 1rem;
     display: none;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     list-style-type: none;
     text-align: left;
     padding: 0;
@@ -92,10 +94,9 @@ nav ul li ul li, nav ul li ul li a {
     background: #054D74;
 }
 
-#active:hover{
-    background: #3B90BE;
+button:hover {
+    cursor: pointer;
 }
-
 /* Global Styling End */
 
 /* 
@@ -172,6 +173,7 @@ Tuner Page Styling
     width: 83%;
     background-color: whitesmoke;
     padding-bottom: 10%;
+    border: 3px solid rgb(255, 153, 0);
 }
 
 .color_separator{
@@ -299,6 +301,7 @@ Learning Hub Page Styling
 .lessons{
     width: 92%;
     background-color: whitesmoke;
+    border: 3px solid rgb(255, 153, 0);
     margin: 0 auto;
     padding-bottom: 3%;
 }
@@ -587,6 +590,7 @@ Test Styling
 #test_content #test_form{
     margin: 0 auto;
     background-color: whitesmoke;
+    border: 3px solid rgb(255, 153, 0);
     width: 90%;
     height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
@@ -800,12 +804,14 @@ Test Styling
     background-color: rgb(0, 189, 63);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
 }
+/* End Test Styling */
 
 /* REMOVE */
 .featured_arrow {
-    text-align: center;
+    text-align: end;
     margin: auto 1rem;
     width: 5%;
+    position: relative;
 }
 
 .featured_arrow > button {
@@ -817,6 +823,7 @@ Test Styling
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     width: 100%;
+    margin: 400% 0 0 0;
 }
 
 .featured_arrow > button:hover {
@@ -902,7 +909,7 @@ Test Styling
     position: relative;
 }
 
-#featured_lessons img {
+#featured_lessons .main_image {
     display: block;
     position: relative;
     height: 100%;
@@ -910,10 +917,43 @@ Test Styling
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
+    z-index: 2;
 }
 
-#featured_lessons img:hover {
+#featured_lessons .main_image:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#featured_lessons .secondary_image_1 {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+    height: 60%;
+    width: 60%;
+    bottom: 30%;
+    left: 80%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#featured_lessons .secondary_image_2 {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+    height: 60%;
+    width: 60%;
+    bottom: 30%;
+    right: 80%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#featured_lessons .secondary_image_1:hover, #featured_lessons .secondary_image_2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
 #featured_lessons p {
@@ -922,7 +962,7 @@ Test Styling
     bottom: 2%;
     left: 4%;
     font-size: 20px;
-    -webkit-text-stroke: 1px black;
+    z-index: 2;
 }
 
 .middle_third > button {
@@ -942,3 +982,126 @@ Test Styling
     background: #3B90BE;
 }
 /* END REMOVE */
+
+/* 
+/////////////////////
+SLB Styling
+/////////////////////
+*/
+#slbcolor{
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+}
+#slb_content {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    width: 90%;
+    height: 100%;
+    border: 3px solid rgb(255, 153, 0)
+}
+#slb_content p#title {
+    font-size: 300%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#slb_content p#directions {
+    font-size: 110%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#slb_content #scales{
+    background-color: #3B90BE;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#slb_content #scalenum{
+    width: 50%;
+    height: 6%;
+    margin: 0 auto;
+    padding-top: 2%;
+    text-align: center;
+}
+#slb_content #scalenum span{
+    display: inline-block;
+    width: 5%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 15px;
+    font-size: 150%;
+}
+#slb_content #scalenum span#complete{
+    background-color: rgb(255, 153, 0);
+    color: white;
+}
+#slb_content #scalenum span#incomplete{
+    background-color: darkgray;
+    color: white;
+}
+#slb_content #rdg_contain{
+    width: 2%;
+    height: 6%;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-align: center;
+}
+#slb_content #rdg_contain img{
+    height: 100%;
+    width: auto;
+    size: 10%;
+    display: block;
+}
+#slb_content #scale_notes{
+    width: 80%;
+    height: 7%;
+    margin: 0 auto;
+    padding-top: 2%;
+    text-align: center;
+}
+#slb_content #scale_notes span{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 150%;
+    background-color: whitesmoke;
+    margin-top: 9%;
+}
+#slb_content #bttn_center{
+    margin: 0 auto;
+    text-align: center;
+    height: 10%;
+    width: 40%;
+}
+#slb_content button{
+    appearance: button;
+    height: 100%;
+    width: 20%;
+    padding: 1%;
+    margin: 0 auto; 
+    margin-top: 10%;
+    text-align: center;
+    background-color: rgb(0, 161, 54);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 88%;
+    border-radius: 5px;
+    transition: .4s;
+}
+#slb_content button:hover{
+    transition: .4s;
+    background-color: rgb(0, 189, 63);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
