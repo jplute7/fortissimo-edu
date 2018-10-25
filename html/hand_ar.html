@@ -52,46 +52,52 @@
         </nav>
 
         <!-- Container for the page.. -->
-        <div class="specific_chord_view">
-            <div class="chord_box">
+        <div class="piano_ar">
+            <div class="top_half">
                 <div class="vertical_container">
-                    <div class="chord_img">
-                        <img src="../assets/images/C_Major_Chord.png">
-                    </div>
-                    <div class="play_chord_btn">
-                        <button id="play_chord">Play!</button>
-                    </div>
-                    <div class="audio_controls">
-                        <p>Vol: </p>
-                        <input type="range" min="1" max="100" value="50" class="slider">
-                    </div>
-                    <div class="chord_switch_box">
-                        <button id="back"><</button>
-                        <button id="forward">></button>
-                    </div>
-                </div>
-            </div>
-            <div class="audio_interface">
-                <div class="vertical_container">
-                    <div class="audio_comparison">
-                        <p>This will eventually change...</p>
-                    </div>
-                    <div class="score_indicator">
-                        <p>Score text is placed here...</p>
-                    </div>
-                    <div class="listening_controls">
-                        <button>Listen</button>
-                        <button>Stop Listening</button>
-                        <button>Save Listen Session</button>
-                    </div>
-                    <div class="mic_controls">
-                        <div class="mic_select">
+                    <div class="controls">
+                        <button id="begin">Begin Recording</button>
+                        <button id="finish">Finish Recording</button>
+                        <div class="camera_selector">
+                            <p>Video: </p>
+                            <select>
+                                <option value="0">Default Video Device</option>
+                                <option value="1">FaceTime HD Camera</option>
+                            </select>
+                        </div>
+                        <div class="mic_selector">
+                            <p>Mic: </p>
                             <select>
                                 <option value="0">Default Input Device</option>
                                 <option value="1">Microphone - Realtek Audio</option>
                                 <option value="2">Transmit - Plantronics Savi 7xx-M</option>
                                 <option value="3">Microphone - Razer Kraken</option>
                             </select>
+                        </div>
+                        <div class="score">
+                            <p class="score_text">
+                                <span class="score_title">Score:</span> <span class="actual_score">94%</span><br />
+                                <span class="tips">Tips: You're doing great! Watch your left hand, it's lagging behind a bit!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sheet_music">
+                        <img src="../assets/images/sheet_music.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_half">
+                <div class="vertical_container">
+                    <div class="camera">
+                        <img src="../assets/images/piano_camera_spoof.jpg">
+                        <div class="camera_text">
+                            Make sure your camera is centered on your hands!
+                        </div>
+                    </div>
+                    <div class="virtual_piano">
+                        <img src="../assets/images/piano_overlay.jpg">
+                        <div class="vp_text">
+                            Follow the hands shown here! Green means you're good so far!
                         </div>
                     </div>
                 </div>

@@ -827,3 +827,255 @@ button:hover {
     background: #3B90BE;
 }
 /* End Specific Chord Styling */
+
+/* Piano AR Styling */
+.piano_ar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.piano_ar .top_half {
+    width: 95%;
+    height: 48%;
+    background: green;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.piano_ar .bottom_half {
+    width: 95%;
+    height: 48%;
+    background: red;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.piano_ar .vertical_container {
+    background: #e5e5e5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.piano_ar .top_half .vertical_container .controls {
+    height: 95%;
+    width: 31%;
+    position: relative;
+    background: whitesmoke;
+    margin: auto 1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.piano_ar .top_half .vertical_container .controls button {
+    height: 10%;
+    width: 95%;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+}
+
+.piano_ar .top_half .vertical_container .controls button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+#begin {
+    margin-top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2%;
+}
+
+#finish {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2%;
+}
+
+.piano_ar .top_half .controls .camera_selector {
+    width: 95%;
+    height: 15%;
+    position: relative;
+    background: #076496;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    color: white;
+    text-align: center;
+}
+
+.piano_ar .top_half .controls .camera_selector p {
+    display: inline;
+    margin: auto 0;
+    top: 30%;
+    position: relative;
+}
+
+.piano_ar .top_half .controls .mic_selector {
+    width: 95%;
+    height: 15%;
+    position: relative;
+    background: #076496;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    color: white;
+    text-align: center;
+}
+
+.piano_ar .top_half .controls .score {
+    width: 95%;
+    height: 35%;
+    position: relative;
+    background: #3B90BE;
+    border: 1px solid #076496;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.piano_ar .top_half .vertical_container .sheet_music {
+    height: 95%;
+    width: 66%;
+    position: relative;
+    margin: auto 0;
+    margin-right: 1%;;
+}
+
+.piano_ar .bottom_half .vertical_container .camera {
+    height: 95%;
+    width: 48%;
+    position: relative;
+    margin: auto 1%;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.piano_ar .bottom_half .vertical_container .virtual_piano {
+    height: 95%;
+    width: 49%;
+    position: relative;
+    margin: auto 0;
+    margin-right: 1%;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.piano_ar .top_half .sheet_music img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    cursor: all-scroll;
+}
+
+.piano_ar .top_half .sheet_music img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.piano_ar .bottom_half .camera img {
+    display: block;
+    position: relative;
+    height: 90%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.piano_ar .bottom_half .camera .camera_text {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.piano_ar .bottom_half .virtual_piano .vp_text {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.piano_ar .bottom_half .virtual_piano img {
+    display: block;
+    position: relative;
+    height: 90%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.piano_ar .top_half .controls .camera_selector select {
+    background: transparent;
+    border: none;
+    height: 100%;
+    width: 70%;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    float: right;
+}
+
+.piano_ar .top_half .controls .camera_selector select:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.piano_ar .top_half .controls .mic_selector select {
+    background: transparent;
+    border: none;
+    height: 100%;
+    width: 70%;
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    float: right;
+}
+
+.piano_ar .top_half .controls .mic_selector select:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
+
+.piano_ar .top_half .controls .mic_selector p {
+    display: inline;
+    margin: auto 0;
+    top: 30%;
+    position: relative;
+}
+
+.piano_ar .top_half .score .score_text {
+    text-align: center;
+    color: white;
+}
+
+.piano_ar .top_half .score .score_title {
+    font-size: 40px;
+}
+
+.piano_ar .top_half .score .actual_score {
+    font-size: 40px;
+    color: lightgreen;
+}
+
+.piano_ar .top_half .score .tips {
+    font-size: 16px;
+}
+
+select {
+    border-radius: 0;
+}
+/* End Piano AR Styling */
