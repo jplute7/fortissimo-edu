@@ -1455,6 +1455,7 @@ select {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .video_listing .video_col .video_row:hover {
@@ -1496,6 +1497,21 @@ select {
     vertical-align: middle;
     font-size: 3rem;
     color: #054D74;
+    display: flex;
+}
+
+.video_listing .video_col .video_row .video_info .top_row img {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.video_listing .video_col .video_row .video_info .top_row img:hover {
+    opacity: 1.0;
 }
 
 .video_listing .video_col .video_row .video_info .second_row {
