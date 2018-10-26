@@ -1292,3 +1292,225 @@ select {
     background: #076496;
 }
 /* End Specific Video Styling */
+
+/* Video Listing Styling */
+.video_listing {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.video_listing .col {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.video_listing .search_options {
+    position: relative;
+    width: 97%;
+    height: 8%;
+    background: #e5e5e5;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_listing .search_options .filtering {
+    position: relative;
+    width: 45%;
+    height: 90%;
+    background: #076496;
+    top: 5%;
+    display: flex;
+}
+
+#options {
+    cursor: pointer;
+}
+
+#label {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding-top: 2.5%;
+    color: white;
+}
+
+.video_listing .search_options .filtering button {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #054D74;
+    background: #076496;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.video_listing .search_options .filtering button:hover {
+    background: #054D74;
+}
+
+.video_listing .search_options .searching {
+    position: relative;
+    width: 50%;
+    height: 90%;
+    background: teal;
+    display: flex;
+    top: 5%;
+}
+
+.video_listing .search_options .searching .search_input {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.video_listing .search_options .searching .search_button {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background: #076496;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.video_listing .search_options .searching .search_button:hover {
+    background: #054D74;
+}
+
+.video_listing .video_col {
+    margin: 0 auto;
+    margin-top: 0;
+    position: relative;
+    width: 97%;
+    height: 196%;
+    background: #e5e5e5;
+    margin-top: 1%;
+}
+
+.video_listing .video_col .abs_pos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #e5e5e5;
+}
+
+.video_listing .video_col .video_row {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 97%;
+    height: 15%;
+    background: whitesmoke;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_listing .video_col .video_row:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.video_listing .video_col .video_row .video_thumbnail {
+    width: 30%;
+    height: 95%;
+    position: relative;
+    top: 2.5%;
+}
+
+.video_listing .video_col .video_row .video_thumbnail img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_listing .video_col .video_row .video_info {
+    width: 67%; 
+    height: 95%;
+    /* background: lightgreen; */
+    position: relative;
+    top: 2.5%;
+}
+
+.video_listing .video_col .video_row .video_info .top_row {
+    width: 95%;
+    height: 30%;
+    position: relative;
+    /* background: palevioletred; */
+    left: 2.5%;
+    top: 3%;
+    vertical-align: middle;
+    font-size: 3rem;
+    color: #054D74;
+}
+
+.video_listing .video_col .video_row .video_info .second_row {
+    width: 95%;
+    height: 20%;
+    position: relative;
+    /* background: sienna; */
+    left: 2.5%;
+    /* margin-top: .5%; */
+    top: 4%;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #076496;
+}
+
+.video_listing .video_col .video_row .video_info .third_row {
+    width: 95%;
+    height: 20%;
+    position: relative;
+    /* background: salmon; */
+    left: 2.5%;
+    top: 5%;
+    font-size: 1.3rem;
+    color: #076496;
+}
+
+.video_listing .video_col .video_row .video_info .bottom_row {
+    width: 95%;
+    height: 20%;
+    position: relative;
+    /* background: firebrick; */
+    left: 2.5%;
+    top: 6%;
+    font-size: 1.3rem;
+    color: #076496;
+}
+
+.video_info p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    left: 2%;
+    top: 2%;
+    /* color: #076496 */
+}
+
+.video_info .instrument {
+    font-weight: bold;
+}
+/* End Video Listing Styling */
