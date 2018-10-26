@@ -1079,3 +1079,216 @@ select {
     border-radius: 0;
 }
 /* End Piano AR Styling */
+
+/* Specific Video Styling */
+.video_page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.video_page .left_col {
+    position: relative;
+    width: 26.5%;
+    height: 95%;
+    /* background: green; */
+    margin-right: 2%;
+}
+
+.video_page .left_col .chapter_list {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background: #e5e5e5;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid #076496;
+}
+
+.video_page .right_col {
+    position: relative;
+    width: 71.5%;
+    height: 95%;
+    /* background: red; */
+}
+
+.video_page .right_col .video_title {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.video_page .right_col .video_title .vertical_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    border: 1px solid #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_page .right_col .video_view {
+    width: 95%;
+    position: relative;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_page .right_col .video_view img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.video_page .right_col .video_title .text {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 25%;
+    left: 2%;
+    font-size: 30px;
+    /* line-height: 250%; */
+}
+
+.video_page .right_col .video_title p {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+.video_page .right_col .video_title .star_icon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.video_page .right_col .video_title img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 8%;
+    margin-left: 90%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+
+.video_page .right_col .video_title img:hover {
+    opacity: 1.0;
+}
+.video_page .left_col .chapter {
+    position: relative;
+    height: 15%;
+    width: 95%;
+    background: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.video_page .left_col .chapter_1 {
+    margin-top: 2%;
+}
+
+#ch_1_collapsible {
+    display: none;
+}
+
+#ch_2_collapsible {
+    display: none;
+}
+
+#ch_3_collapsible {
+    display: none;
+}
+
+#ch_4_collapsible {
+    display: none;
+}
+
+#ch_5_collapsible {
+    display: none;
+}
+
+.collapsible_label {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background: #076496;
+}
+
+.collapsible_label:hover {
+    background: #3B90BE;
+}
+
+.collapsible_label::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+}
+
+.collapsible_content {
+    max-height: 0px;
+    overflow: hidden;
+    background-color: #054D74;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .collapsible_label + .collapsible_content {
+    max-height: 1000px;
+    height: 80%;
+}
+
+.toggle:checked + .collapsible_label::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .collapsible_label {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.subchapter {
+    width: 100%;
+    height: 20%;
+    background: #054D74;
+    border: 1px solid whitesmoke;
+    color: white;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.subchapter:hover {
+    background: #076496;
+}
+/* End Specific Video Styling */
