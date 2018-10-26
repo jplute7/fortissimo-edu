@@ -1,4 +1,4 @@
-<!-- Home Page. -->
+<!-- Home Page, post login. -->
 
 <!DOCTYPE html>
 <html>
@@ -11,13 +11,13 @@
         <!-- Navigation Bar -->
         <nav role="navigation">
             <ul>
-                <li id="active"><a href="home.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="#">Learning Hub</a></li>
                 <li><a href="#">Tuner</a></li>
                 <li><a href="#">Favorites</a></li>
-                <li><a href="#">Instruments</a>
+                <li id="active"><a href="#">Instruments</a>
                 <ul class="dropdown">
-                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                    <li id="active"><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
@@ -51,19 +51,29 @@
             </ul>
         </nav>
 
-        <!-- Home Content -->
-        <div class="home_content">
-            <!-- Image holder, for main page's image banner. -->
-            <div class="image_view">
-                <img class="home_image" src="../assets/images/guitar.jpg">
-                <p id="image_text">Welcome to Fortissimo Education! <br />Learn to play an instrument in fun and intuitive ways with us today!</p>
-                <button class="home_btn" id="register_btn" onclick="location.href='register.html'">Register now!</button>
-                <button class="home_btn" id="login_btn" onclick="location.href='login.html'">Login!</button>
-            </div>
-
-            <div class="instrument_view">
-                
+        <!-- Container for the page.. -->
+        <div class="login_container">
+            <div class="middle_container">
+                <div class="title">
+                    Login
+                </div>
+                <div class="username">
+                    <div class="username_label"><label>Username: </label></div>
+                    <input type="text" placeholder="" class="username_input">
+                </div>
+                <div class="password">
+                    <div class="password_label"><label>Password: </label></div>
+                    <input type="password" placeholder="" class="password_input">
+                </div>
+                <div class="submit_button">
+                    <button onclick="location.href='home.html'">Login</button>
+                </div>
+                <div class="links">
+                    <button onclick="location.href='register.html'">New? Register Here!</button>
+                    <button>Forgot Password?</button>
+                </div>
             </div>
         </div>
+
     </body>
 </html>

@@ -1563,3 +1563,404 @@ select {
     font-weight: bold;
 }
 /* End Video Listing Styling */
+
+/* Login Page Styling */
+.login_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.login_container .middle_container {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background: #e5e5e5;
+    left: 10%;
+    top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.login_container .middle_container .title {
+    position: relative;
+    width: 95%;
+    height: 15%;
+    /* background: green; */
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 4rem;
+    color: #076496;
+}
+
+.login_container .middle_container .username {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.login_container .middle_container .password {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.login_container .middle_container .links {
+    position: absolute;
+    width: 95%;
+    height: 10%;
+    /* background: goldenrod; */
+    bottom: 1%;
+    left: 2.5%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.login_container .middle_container .username .username_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.login_container .middle_container .username .username_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.login_container .middle_container .password .password_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.login_container .middle_container .password .password_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.login_container .middle_container .submit_button {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.login_container .middle_container .submit_button button {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #076496;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.login_container .middle_container .submit_button button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.login_container .middle_container .links button {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background: #076496;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.login_container .middle_container .links button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* End Login Page Styling */
+
+/* Register Styling */
+.register_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.register_container .middle_container {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background: #e5e5e5;
+    left: 10%;
+    top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .title {
+    position: relative;
+    width: 95%;
+    height: 15%;
+    /* background: green; */
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 4rem;
+    color: #076496;
+}
+
+.register_container .middle_container .username {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .email {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .email_conf {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .password {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .password_conf {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background: #076496;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .password_conf .password_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 1.6rem;
+    top: 22%;
+    color: white;
+}
+
+.register_container .middle_container .password_conf .password_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.register_container .middle_container .links {
+    position: absolute;
+    width: 95%;
+    height: 10%;
+    /* background: goldenrod; */
+    bottom: 1%;
+    left: 2.5%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.register_container .middle_container .username .username_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.register_container .middle_container .username .username_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.register_container .middle_container .email .username_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.register_container .middle_container .email .username_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.register_container .middle_container .email_conf .username_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.register_container .middle_container .email_conf .username_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.register_container .middle_container .password .password_label {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    top: 15%;
+    color: white;
+}
+
+.register_container .middle_container .password .password_input {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    margin: 0;
+    border: 0;
+    padding-left: 1%;
+    font-size: 2rem;
+    top: 3%;
+    right: 1%;
+}
+
+.register_container .middle_container .submit_button {
+    position: relative;
+    width: 95%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.register_container .middle_container .submit_button button {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #076496;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.register_container .middle_container .submit_button button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.register_container .middle_container .links button {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background: #076496;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.register_container .middle_container .links button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* End Register Styling */
