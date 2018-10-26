@@ -732,13 +732,46 @@ button:hover {
     margin-bottom: 2%;
 }
 
+.audio_interface .audio_comparison img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.audio_interface .score_indicator {
+    text-align: center;
+    color: white;
+}
+
+.audio_interface .score_indicator p {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.audio_interface .score_title {
+    font-size: 3rem;
+}
+
+.audio_interface .actual_score {
+    font-size: 3rem;
+    color: lightcoral;
+}
+
+.audio_interface .tips {
+    font-size: 1rem;
+}
+
 .audio_interface .score_indicator {
     width: 95%;
     height: 7%;
     margin: 0 auto;
     position: relative;
     display: flex;
-    background: whitesmoke;
+    background: #076496;
     margin-bottom: 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
