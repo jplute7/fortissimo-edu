@@ -1022,6 +1022,7 @@ SLB Styling
     width: 70%;
     height: 50%;
     margin: 0 auto;
+    margin-top: 2%;
     border-radius: 10px;
 }
 #slb_content #scalenum{
@@ -1104,4 +1105,219 @@ SLB Styling
     transition: .4s;
     background-color: rgb(0, 189, 63);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+/* End Sax Leak Begin Styling */
+
+/* 
+/////////////////////
+SLDP Styling
+/////////////////////
+*/
+#sldp_content {
+    margin: 0 auto;
+    background-color: lightgray;
+    width: 100%;
+    height: 110%;
+    text-align: center;
+    position: absolute;
+}
+#sldp_content p#title {
+    font-size: 300%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#sldp_content #top {
+    margin: 1rem auto;
+    width: 75%;
+    height: 78%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #3B90BE;
+}
+#sldp_content #top .left {
+    margin: 1rem;
+    height: 92%;
+    width: 25%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: right;
+    position: relative;
+    background-color: #3B90BE;
+    border: 3px solid rgb(255, 153, 0);
+}
+#sldp_content #top .left img {
+    width: 100%;
+    height: 100%;
+}
+#sldp_content #top .mid {
+    background-color: whitesmoke;
+    border: 3px solid rgb(255, 153, 0);
+    margin: 1rem;
+    height: 92%;
+    width: 25%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+}
+#sldp_content #top .mid #replace_when{
+    font-size: 190%;
+    margin: auto auto;
+    margin-top: 2%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline rgb(255, 153, 0);
+}
+
+#sldp_content #top ul{
+    width: 25%;
+    height: 45%;
+    font-size: 160%;
+}
+#sldp_content #top #explain{
+    margin-top: 70%;
+
+}
+#sldp_content #bttn_holder{
+    width: 1000%;
+    height: 30%;
+    outline: 1px solid black;
+}
+#sldp_content button{
+    appearance: button;
+    height: 6%;
+    width: 15%;
+    padding: 1%;
+    margin: 0 auto; 
+    margin-top: 1%;
+    text-align: center;
+    background-color: rgb(0, 161, 54);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 88%;
+    border-radius: 5px;
+    transition: .4s;
+}
+#sldp_content button:hover{
+    transition: .4s;
+    background-color: rgb(0, 189, 63);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+/* End SLDP styling */
+
+/* 
+/////////////////////
+SLDP Styling
+/////////////////////
+*/
+#shop_content {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 150%;
+    text-align: center;
+    position: absolute;
+}
+#shop_content p#title {
+    font-size: 300%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#shop_content #lesson_category {
+    margin: 1rem auto;
+    width: 85%;
+    height: 15%;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(221, 221, 221);
+}
+#shop_content #lesson_category .arrow{
+    height: 25%;
+    width: 4%;
+    margin-top: 5.5%;
+    vertical-align: middle;
+}
+#shop_content #lesson_category .arrow button{
+    height: 100%;
+    width: 100%;
+    font-size: 200%;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 235);
+}
+#shop_content #lesson_category .lesson {
+    margin: .6rem;
+    height: 90%;
+    width: 27%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    position: relative;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #3B90BE;
+    border: 3px solid rgb(255, 153, 0);
+}
+#shop_content #lesson_category .lesson:hover{
+    background-color: rgb(97, 172, 212);
+    transition: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+#shop_content #lesson_category .lesson img {
+    width: 35%;
+    height: 80%;
+    margin: 1%;
+    margin-top: 5%;
+}
+#shop_content #lesson_category .lesson span {
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 10%;
+    vertical-align: top;
+    color: white;
+    height: 80%;
+}
+#shop_content #lesson_category .lesson span #l_title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 180%;
+    padding: 0;
+    margin: 0;
+}
+#shop_content #category{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 140%;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
+}
+#shop_content input[type=text] {
+    width: 10%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 90%;
+    background-color: white;
+    padding: .5%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#shop_content input[type=text]:focus {
+    width: 50%;
 }

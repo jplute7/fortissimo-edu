@@ -1,10 +1,10 @@
-<!-- Sax Hub Page -->
+<!-- Leak Results Page -->
 
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="../css/css.css">
-        <title>Saxophone Hub</title>
+        <title>Leak Detector Results</title>
     </head>
 
     <body>
@@ -28,7 +28,7 @@
                         <ul class="dropdown subdropdown">
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Lessons</a></li>
-                            <li><a href="#">Check Pads</a></li>
+                            <li id="active"><a href="#">Check Pads</a></li>
                         </ul>
                     </li>
                     <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
@@ -51,36 +51,34 @@
             </ul>
         </nav>
 
-        <!-- Container for the page.. -->
-        <div class="hub_container">
-            <div class="upper_third">
-                <div class="featured_arrow">
-                    <button><</button>
+        <!-- SLDP Content -->
+        <div id='sldp_content'>
+            <p id="title">Leak Detector Results</p>
+            <div id="top">
+                <div class="left">
+                    <img src="../assets/images/leak.PNG" id="leak">
                 </div>
-                <div id="featured_lessons">
-                    <img class="main_image" src="../assets/images/sax2.jpg">
-                    <p>Check out this new featured video!</p>
-                    <img class="secondary_image_1" src="../assets/images/sax3.jpg">
-                    <img class="secondary_image_2" src="../assets/images/sax.jpg">
+                <div class="mid">
+                    <p id="replace_when">Replace Now (Red)</p>
+                    <ul>
+                        <li>Pad 5</li>
+                        <li>Pad 14</li>
+                    </ul>
+                    <p id="explain">These pads are beyond the point of sounding good and will need to be replaced now.</p>
                 </div>
-                <div class="featured_arrow">
-                    <button>></button>
-                </div>
-            </div>
-            <div class="middle_third">
-                <button>Videos</button>
-                <button onclick="location.href='chord_overview.html'">Leak Detector</button>
-                <button onclick="location.href='lesson_shops.html'">Lessons</button>
-            </div>
-            <div class="lower_third">
-                <div id="care_for_guitar">
-                    <img src="../assets/images/video-thumbnail.jpg">
-                </div>
-                <div id="daily_guitar_challenge">
-                    <img src="../assets/images/video-thumbnail.jpg">
+                <div class="mid">
+                    <p id="replace_when">Replace Soon (Yellow)</p>
+                    <ul>
+                        <li>Pad 2</li>
+                        <li>Pad 6</li>
+                        <li>Pad 10</li>
+                    </ul>
+                    <p id="explain">These pads are beginning to show signs of wear and will need to be replaced soon.
+                        Order some now so you have them when they go out!</p>
                 </div>
             </div>
+                <button button onclick="location.href='sax_leak_begin.html'">Try Again</button>
         </div>
-        
+            
     </body>
 </html>
