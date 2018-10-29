@@ -323,6 +323,7 @@ Learning Hub Page Styling
 .lessons .lesson_box {
     background-color: #3B90BE;
     color: white;
+    text-shadow: 1px 1px 1px black;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -428,6 +429,7 @@ Example Lesson Page Styling
     vertical-align: middle;
     display: table-cell;
     color:whitesmoke;
+    text-shadow: 1px 1px 1px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .lesson_example #top .video {
@@ -479,6 +481,7 @@ Example Lesson Page Styling
     background-color: #3B90BE;
     border: none;
     color: white;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -605,6 +608,7 @@ Test Styling
     border: .5px solid #076496;
     background-color: #3B90BE;
     color: white;
+    text-shadow: 1px 1px 1px black;
     width: 90%;
     height: 10%;
     margin-bottom: 2.5%;
@@ -631,6 +635,7 @@ Test Styling
     border: .5px solid #076496;
     background-color: #3B90BE;
     color: white;
+    text-shadow: 1px 1px 1px black;
     width: 90%;
     height: 22%;
     margin-bottom: .5%;
@@ -678,7 +683,7 @@ Test Styling
     background-color: rgb(216, 216, 216);
 }
 #test_content #mult #radios .container input:checked ~ .checkmark {
-    background-color: rgb(33, 201, 243);
+    background-color: rgb(255, 153, 0);
   }
 #test_content #mult #radios .checkmark:after {
     content: "";
@@ -702,6 +707,7 @@ Test Styling
     border: .5px solid #076496;
     background-color: #3B90BE;
     color: white;
+    text-shadow: 1px 1px 1px black;
     width: 90%;
     height: 25%;
     margin-bottom: .5%;
@@ -745,7 +751,7 @@ Test Styling
     height: 100%;
     width: 10%;  
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(255, 153, 0);
     border: none;
     color: black;
     text-align: center;
@@ -756,7 +762,7 @@ Test Styling
 }
 #play_test #musicControlContainer button:hover{
     transition: .4s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 179, 76);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
 }
 #play_test #sheetMusic{
@@ -793,6 +799,7 @@ Test Styling
     background-color: rgb(0, 161, 54);
     border: none;
     color: white;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     text-decoration: none;
     font-size: 88%;
@@ -1182,7 +1189,8 @@ SLDP Styling
 }
 #sldp_content #top #explain{
     margin-top: 70%;
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
 }
 #sldp_content #bttn_holder{
     width: 1000%;
@@ -1215,7 +1223,7 @@ SLDP Styling
 
 /* 
 /////////////////////
-SLDP Styling
+Lesson Shop Styling
 /////////////////////
 */
 #shop_content {
@@ -1238,7 +1246,7 @@ SLDP Styling
 #shop_content #lesson_category {
     margin: 1rem auto;
     width: 85%;
-    height: 15%;
+    height: 18%;
     display: flex;
     border-radius: 15px;
     justify-content: space-evenly;
@@ -1279,24 +1287,29 @@ SLDP Styling
 }
 #shop_content #lesson_category .lesson img {
     width: 35%;
-    height: 80%;
+    height: 70%;
     margin: 1%;
     margin-top: 5%;
 }
 #shop_content #lesson_category .lesson span {
     display: inline-block;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 10%;
     vertical-align: top;
+    font-size: 120%;
     color: white;
+    text-shadow: 1px 1px 1px black;
     height: 80%;
 }
-#shop_content #lesson_category .lesson span #l_title{
+#shop_content #lesson_category .lesson #l_title{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
-    font-size: 180%;
-    padding: 0;
+    font-size: 190%;
+    padding-left: 1%;
+    padding-top: 1%;
     margin: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 #shop_content #category{
     font-family: Georgia, 'Times New Roman', Times, serif;
