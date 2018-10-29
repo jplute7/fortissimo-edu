@@ -1,0 +1,94 @@
+<!-- Leak Begin Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Saxophone Leak Detector</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lesson_home.html">Learning Hub</a></li>
+                <li><a href="tuner_by_note.html">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="sax_hub.html">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+            </ul>
+        </nav>
+
+        <!-- SLB Content -->
+        <div id="slbcolor">
+            <div id='slb_content'>
+                <p id="title">Saxophone Leaky Pad Detector</p>
+                <p id="directions">Play through the displayed scales at a low volume. After all scales are played, the leaky pads will 
+                    be displayed to you.
+                </p>
+                <div id="scales">
+                    <div id="scalenum">
+                        <span id="complete">1</span>
+                        <span id="complete">2</span>
+                        <span id="complete">3</span>
+                        <span id="incomplete">4</span>
+                        <span id="incomplete">5</span>
+                    </div>
+                    <div id="rdg_contain">
+                        <img src="../assets/images/recording.png" id="recording">
+                    </div>
+                    <div id="scale_notes">
+                        <span id="notes">B-flat</span>
+                        <span id="notes">C</span>
+                        <span id="notes">D</span>
+                        <span id="notes">E-flat</span>
+                        <span id="notes">F</span>
+                        <span id="notes">G</span>
+                        <span id="notes">A</span>
+                        <span id="notes">B-flat</span>
+                    </div>
+                </div>
+                <div id="bttn_center">
+                    <button onclick="location.href='sax_leak_display_pads.html'">Get Results!</button>
+                </div>
+                
+            </div>
+        </div>
+        
+
+            
+        </div>
+    </body>
+</html>

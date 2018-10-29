@@ -1,0 +1,84 @@
+<!-- Leak Results Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Leak Detector Results</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lesson_home.html">Learning Hub</a></li>
+                <li><a href="tuner_by_note.html">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="sax_hub.html">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+            </ul>
+        </nav>
+
+        <!-- SLDP Content -->
+        <div id='sldp_content'>
+            <p id="title">Leak Detector Results</p>
+            <div id="top">
+                <div class="left">
+                    <img src="../assets/images/leak.PNG" id="leak">
+                </div>
+                <div class="mid">
+                    <p id="replace_when">Replace Now (Red)</p>
+                    <ul>
+                        <li>Pad 5</li>
+                        <li>Pad 14</li>
+                    </ul>
+                    <p id="explain">These pads are beyond the point of sounding good and will need to be replaced now.</p>
+                </div>
+                <div class="mid">
+                    <p id="replace_when">Replace Soon (Yellow)</p>
+                    <ul>
+                        <li>Pad 2</li>
+                        <li>Pad 6</li>
+                        <li>Pad 10</li>
+                    </ul>
+                    <p id="explain">These pads are beginning to show signs of wear and will need to be replaced soon.
+                        Order some now so you have them when they go out!</p>
+                </div>
+            </div>
+                <button button onclick="location.href='sax_leak_begin.html'">Try Again</button>
+        </div>
+            
+    </body>
+</html>
