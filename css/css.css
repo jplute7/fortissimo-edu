@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Global Styling. */
 html {
     height: 100%;
@@ -100,19 +100,11 @@ button:hover {
 }
 /* Global Styling End */
 
-<<<<<<< HEAD
-/* Home Page Styling */
-.home_content {
-    position: absolute;
-}
-
-=======
 /* 
 /////////////////////
 Home Page Styling
 /////////////////////
  */
->>>>>>> aaron_dev
 .home_content .image_view {
     width: 60%;
     height: 25%;
@@ -1576,9 +1568,7 @@ select {
 
 /* Login Page Styling */
 .login_container {
-=======
-
-
+}
 /* 
 /////////////////////
 Tuner Page Styling
@@ -2253,13 +2243,11 @@ Test Styling
 }
 
 .hub_container {
->>>>>>> aaron_dev
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-<<<<<<< HEAD
 .login_container .middle_container {
     position: absolute;
     width: 80%;
@@ -2653,7 +2641,6 @@ Test Styling
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 /* End Register Styling */
-=======
 .hub_container > div{
     margin: 1rem auto;
     position: relative;
@@ -3140,8 +3127,7 @@ SLDP Styling
     outline: none;
     border: 2px solid rgb(255, 153, 0);
 }
->>>>>>> aaron_dev
-=======
+
 /* Global Styling. */
 html {
     height: 100%;
@@ -5143,4 +5129,3 @@ select {
     background: #3B90BE;
 }
 
->>>>>>> origin/bryce_dev
