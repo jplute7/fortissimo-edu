@@ -1,0 +1,105 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="../css/css.css">
+        <title>Drum Hub</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="#">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="#">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <!--Need to do this-->
+                    <li id="active"><a href="drumhub.html">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="timingTest.html">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="hub_container">
+            <div class="upper_third">
+                <div class="featured_arrow">
+                    <button><</button>
+                </div>
+                <!--Need to do this with drums-->
+                <div id="featured_lessons">
+                    <img class="main_image" src="../assets/images/drum1.jpg">
+                    <p>Check out this new featured video!</p>
+                    <img class="secondary_image_1" src="../assets/images/drum2.jpg">
+                    <img class="secondary_image_2" src="../assets/images/drum3.jpg">
+                </div>
+                <div class="featured_arrow">
+                    <button></button>
+                </div>
+                <div class="featured_arrow">
+                   <button></button>
+                </div>
+            </div>
+            <div class="middle_third">
+                <button>Videos</button>
+
+                <button onclick="location.href='timingTest.html'">Timing Test</button>
+                <button>Lessons</button>
+            </div>
+            <div class="lower_third">
+                <!--Dont change name ideally it would be named care for drum-->
+                <div id="care_for_guitar">
+                    <!--find image for caring for drums-->
+                    <img src="../assets/images/CaringForDrums.jpg">
+                    <p>Caring for your drums</p>
+                </div>
+                <!--create a metronome button here-->
+                <div id="metronome">
+                        <a href="metronome.html">
+                                <img src="../assets/images/metronome.jpg" alt="HTML tutorial" style="width:200px;height:200px;border-radius:50%;">
+                        </a> 
+                </div>
+
+                <!--Dont change name as mentioned earlier-->
+                <div id="daily_guitar_challenge">
+                    <!--find image for drums-->
+                    <img src="../assets/images/drumChallenge.jpg">
+                    <p>Daily Challenge</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
