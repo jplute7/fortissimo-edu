@@ -75,6 +75,17 @@ nav ul li ul li, nav ul li ul li a {
     width: 100%;
 }
 
+nav .icon_container {
+    float: right;
+    font-family: Snell Roundhand, cursive;
+}
+
+nav .icon_container:hover {
+    /* do nothing :) */
+    cursor: default;
+    background: #076496;
+}
+
 .subdropdown {
     left: 100%;
     right: 0;
@@ -168,7 +179,6 @@ Home Page Styling
 }
 /* End Home Page Styling */
 
-<<<<<<< HEAD
 /* Home Post-Login Styling */
 #home_cards {
     width: 100%;
