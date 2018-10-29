@@ -75,6 +75,10 @@ nav ul li ul li, nav ul li ul li a {
     width: 100%;
 }
 
+.instructions_button {
+    float: right;
+}
+
 nav .icon_container {
     float: right;
     font-family: Snell Roundhand, cursive;
@@ -231,206 +235,29 @@ Home Page Styling
 }
 /* End Home Post-Login Styling */
 
-/* Guitar Hub Styling */
-.featured_arrow {
-    text-align: end;
-    margin: auto 1rem;
-    width: 5%;
-    position: relative;
-}
-
-.featured_arrow > button {
-    border: 0px solid white;
-    background: #076496;
-    color: white;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    width: 100%;
-    margin: 400% 0 0 0;
-}
-
-.featured_arrow > button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background: #3B90BE;
-}
-
-.hub_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.hub_container > div{
-    margin: 1rem auto;
-    position: relative;
-    display: flex;
-}
-
-.upper_third {
-    justify-content: center;
-    width: 100%;
-    height: 40%;
-}
-
-.middle_third {
-    width: 100%;
-    height: 10%;
-    justify-content: space-evenly;
-}
-
-.lower_third {
-    width: 100%;
-    height: 40%;
-    justify-content: space-between;
-}
-
-#care_for_guitar {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#daily_guitar_challenge {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#care_for_guitar img:hover, #daily_guitar_challenge img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#care_for_guitar img, #daily_guitar_challenge img {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#featured_lessons {
-    border: 1px solid #076496;
-    display: inline-block;
-    height: 100%;
-    width: 50%;
-    position: relative;
-}
-
-#featured_lessons .main_image {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    z-index: 2;
-}
-
-#featured_lessons .main_image:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#featured_lessons .secondary_image_1 {
-    display: block;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 1;
-    height: 60%;
-    width: 60%;
-    bottom: 30%;
-    left: 80%;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons .secondary_image_2 {
-    display: block;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 1;
-    height: 60%;
-    width: 60%;
-    bottom: 30%;
-    right: 80%;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons .secondary_image_1:hover, #featured_lessons .secondary_image_2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons p {
-    position: absolute;
-    color: white;
-    bottom: 2%;
-    left: 4%;
-    font-size: 20px;
-    z-index: 2;
-}
-
-.middle_third > button {
-    position: relative;
-    height: 100%;
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background: #076496;
-    border: 0px solid #076496;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    color: white;
-}
-
-.middle_third > button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background: #3B90BE;
-}
-/* End Guitar Hub Styling */
-
 /* Piano Hub Styling */
 #care_for_piano {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
 
 #daily_piano_challenge {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
@@ -439,10 +266,20 @@ Home Page Styling
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+#care_for_piano p, #daily_piano_challenge p {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #076496;
+    text-align: center;
+}
+
 #care_for_piano img, #daily_piano_challenge img {
+    border: 1px solid #076496;
     display: block;
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
@@ -563,7 +400,7 @@ Home Page Styling
 }
 
 .chord_box {
-    background: red;
+    /* background: red; */
     width: 30%;
     height: 91%;
     position: relative;
@@ -575,7 +412,7 @@ Home Page Styling
 .chord_box .vertical_container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 93%;
     background: #e5e5e5;;
 }
 
@@ -718,7 +555,7 @@ Home Page Styling
 }
 
 .audio_interface {
-    background: green;
+    /* background: green; */
     width: 68%;
     height: 91%;
     position: relative;
@@ -730,7 +567,7 @@ Home Page Styling
     background: #e5e5e5;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .audio_interface .audio_comparison {
@@ -810,6 +647,7 @@ Home Page Styling
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
+    font-size: 1.5rem;
 }
 
 .audio_interface .listening_controls button:hover {
@@ -1041,6 +879,7 @@ Home Page Styling
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .piano_ar .bottom_half .virtual_piano .vp_text {
@@ -1048,6 +887,7 @@ Home Page Styling
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .piano_ar .bottom_half .virtual_piano img {
@@ -2657,6 +2497,19 @@ Test Styling
     display: flex;
 }
 
+#title_box {
+    justify-content: center;
+    width: 100%;
+    height: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #054D74;
+    text-align: center;
+}
+
 .upper_third {
     justify-content: center;
     width: 100%;
@@ -2676,27 +2529,27 @@ Test Styling
 }
 
 #care_for_guitar {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
 
 #daily_guitar_challenge {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
@@ -2708,15 +2561,23 @@ Test Styling
 #care_for_guitar img, #daily_guitar_challenge img {
     display: block;
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
 
+#care_for_guitar p, #daily_guitar_challenge p {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #076496;
+    text-align: center;
+}
+
 #featured_lessons {
-    border: 1px solid #076496;
     display: inline-block;
     height: 100%;
     width: 50%;
@@ -2724,9 +2585,10 @@ Test Styling
 }
 
 #featured_lessons .main_image {
+    border: 1px solid #076496;
     display: block;
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
@@ -2745,7 +2607,7 @@ Test Styling
     z-index: 1;
     height: 60%;
     width: 60%;
-    bottom: 30%;
+    bottom: 20%;
     left: 80%;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
@@ -2759,7 +2621,7 @@ Test Styling
     z-index: 1;
     height: 60%;
     width: 60%;
-    bottom: 30%;
+    bottom: 20%;
     right: 80%;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
@@ -2771,12 +2633,13 @@ Test Styling
 }
 
 #featured_lessons p {
-    position: absolute;
-    color: white;
-    bottom: 2%;
-    left: 4%;
-    font-size: 20px;
+    color: #076496;
+    font-size: 2rem;
     z-index: 2;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    text-align: center;
 }
 
 .middle_third > button {
@@ -2789,6 +2652,7 @@ Test Styling
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     color: white;
+    font-size: 2rem;
 }
 
 .middle_third > button:hover {
@@ -3359,329 +3223,6 @@ button:hover {
 }
 /* End Home Post-Login Styling */
 
-/* Guitar Hub Styling */
-.featured_arrow {
-    text-align: end;
-    margin: auto 1rem;
-    width: 5%;
-    position: relative;
-}
-
-.featured_arrow > button {
-    border: 0px solid white;
-    background: #076496;
-    color: white;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    width: 100%;
-    margin: 400% 0 0 0;
-}
-
-.featured_arrow > button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background: #3B90BE;
-}
-
-.hub_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.hub_container > div{
-    margin: 1rem auto;
-    position: relative;
-    display: flex;
-}
-
-.upper_third {
-    justify-content: center;
-    width: 100%;
-    height: 40%;
-}
-
-.middle_third {
-    width: 100%;
-    height: 10%;
-    justify-content: space-evenly;
-}
-
-.lower_third {
-    width: 100%;
-    height: 40%;
-    justify-content: space-between;
-}
-
-#care_for_guitar {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#daily_guitar_challenge {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#care_for_guitar img:hover, #daily_guitar_challenge img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#care_for_guitar img, #daily_guitar_challenge img {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#featured_lessons {
-    border: 1px solid #076496;
-    display: inline-block;
-    height: 100%;
-    width: 50%;
-    position: relative;
-}
-
-#featured_lessons .main_image {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    z-index: 2;
-}
-
-#featured_lessons .main_image:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#featured_lessons .secondary_image_1 {
-    display: block;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 1;
-    height: 60%;
-    width: 60%;
-    bottom: 30%;
-    left: 80%;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons .secondary_image_2 {
-    display: block;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 1;
-    height: 60%;
-    width: 60%;
-    bottom: 30%;
-    right: 80%;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons .secondary_image_1:hover, #featured_lessons .secondary_image_2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-}
-
-#featured_lessons p {
-    position: absolute;
-    color: white;
-    bottom: 2%;
-    left: 4%;
-    font-size: 20px;
-    z-index: 2;
-}
-
-.middle_third > button {
-    position: relative;
-    height: 100%;
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background: #076496;
-    border: 0px solid #076496;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-    color: white;
-}
-
-.middle_third > button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background: #3B90BE;
-}
-/* End Guitar Hub Styling */
-
-/* Piano Hub Styling */
-#care_for_piano {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#daily_piano_challenge {
-    border: 1px solid #076496;
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    height: 90%;
-    margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-#care_for_piano img:hover, #daily_piano_challenge img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#care_for_piano img, #daily_piano_challenge img {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-/* End Piano Hub Styling */
-
-/* Chord Overview Styling */
-.chord_page {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.chords_container {
-    width: 80%;
-    height: 100%;
-    position: absolute;
-    float: right;
-}
-
-.chords_container .top_section {
-    margin: 2% 1% 0 1%;
-    position: relative;
-    display: flex;
-    background: #e5e5e5;
-    width: 100%;
-    height: 45%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    justify-content: space-evenly;
-}
-
-.chords_container .bottom_section {
-    margin: 2% 1% 0 1%;
-    position: relative;
-    display: flex;
-    background: #e5e5e5;
-    width: 100%;
-    height: 45%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    justify-content: space-evenly;
-}
-
-.chord_sidebar {
-    float: right;
-    height: 50%;
-    width: 16%;
-    background: #3B90BE;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    right: 1%;
-    top: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-#chord_sidebar_title {
-    width: 90%;
-    height: 5%;
-    position: relative;
-    margin-top: 1rem;
-}
-
-#chord_sidebar_title p {
-    position: relative;
-    display: inline;
-    width: 100%;
-}
-
-.chord_sidebar_content {
-    height: 90%;
-    width: 90%;
-    background: #076496;
-    position: relative;
-    margin: auto auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.chord_sidebar_content p {
-    color: white;
-    margin: 1rem;
-}
-
-.chord_check {
-    display: inline;
-    margin-right: 1rem;
-}
-
-.chord {
-    height: 95%;
-    border: 1px solid #076496;
-    width: 30%;
-    margin: auto 0;
-}
-
-.chord img {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
-.chord img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    cursor: pointer;
-}
-/* End Chord Overview Styling */
-
 /* Specific Chord Styling */
 .specific_chord_view {
     position: absolute;
@@ -3691,7 +3232,7 @@ button:hover {
 }
 
 .chord_box {
-    background: red;
+    /* background: red; */
     width: 30%;
     height: 91%;
     position: relative;
@@ -3703,7 +3244,7 @@ button:hover {
 .chord_box .vertical_container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 93%;
     background: #e5e5e5;;
 }
 
@@ -3750,6 +3291,7 @@ button:hover {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
+    font-size: 1.5rem;
 }
 
 .chord_box .play_chord_btn #play_chord:hover {
@@ -3830,6 +3372,7 @@ button:hover {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
+    font-size: 1.5rem;
 }
 
 .chord_box .chord_switch_box button:hover {
@@ -3846,7 +3389,7 @@ button:hover {
 }
 
 .audio_interface {
-    background: green;
+    /* background: green; */
     width: 68%;
     height: 91%;
     position: relative;
@@ -3858,7 +3401,7 @@ button:hover {
     background: #e5e5e5;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 93%;
 }
 
 .audio_interface .audio_comparison {
@@ -4053,6 +3596,7 @@ button:hover {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
+    font-size: 1.5rem;
 }
 
 .piano_ar .top_half .vertical_container .controls button:hover {
@@ -4087,7 +3631,8 @@ button:hover {
 .piano_ar .top_half .controls .camera_selector p {
     display: inline;
     margin: auto 0;
-    top: 30%;
+    top: 23%;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -4226,7 +3771,8 @@ button:hover {
 .piano_ar .top_half .controls .mic_selector p {
     display: inline;
     margin: auto 0;
-    top: 30%;
+    top: 23%;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -4409,6 +3955,7 @@ select {
     transition-duration: 0.5s;
     cursor: pointer;
     background: #076496;
+    font-size: 1.1rem;
 }
 
 .collapsible_label:hover {
@@ -5139,3 +4686,62 @@ select {
     background: #3B90BE;
 }
 
+#home_cards .hub_text {
+    position: relative;
+    margin: auto 0;
+    top: 40%;
+    color: white;
+    font-size: 3rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 5;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
