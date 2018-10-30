@@ -1999,3 +1999,180 @@ select {
     background: #3B90BE;
 }
 
+h1{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px; /* 1/2 height */
+    text-align: center;
+}
+#active1 {
+    background: #B76300;
+}
+
+#nav1 {
+    width: 100%;
+    background-color: #FF961A;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nav1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav1 ul {
+    list-style: none;
+    background: #FF961A;
+    text-align: center;
+    display: inline;
+}
+
+#nav1 ul li {
+    color: white;
+    background: #FF961A;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+#nav1 ul li:hover {
+    background: #3B90BE;
+    cursor: pointer;
+}
+
+#nav1 ul li ul {
+    background: #FF961A;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 1rem;
+    display: none;
+    left: 0;
+    z-index: 3;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+#nav1 ul li:hover > ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+#nav1 ul li ul li, #nav1 ul li ul li a {
+    width: 100%;
+}
+
+#nav1 .icon_container {
+    float: right;
+    font-family: Snell Roundhand, cursive;
+}
+
+#nav1 .icon_container:hover {
+    /* do nothing :) */
+    cursor: default;
+    background: #FF961A;
+}
+
+.class_options {
+    position: relative;
+    width: 97%;
+    height: 8%;
+    background: #e5e5e5;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.class_options .filtering {
+    position: relative;
+    width: 45%;
+    height: 90%;
+    background: #FF961A;
+    top: 5%;
+    display: flex;
+}
+
+#gradebook {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding-top: 2.5%;
+    color: white;
+}
+
+.class_options .filtering button {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #054D74;
+    background: #FF961A;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.class_options .filtering button:hover {
+    background: #054D74;
+}
+h2{
+    position: relative;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+thead{
+    font-size: 30px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.addOptions{
+    width: 25%;
+    height: 30%   ;
+    padding: 5px;
+    border: 5px;
+}
+
+.Col {
+    float: left;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.middle {
+    width: 50%;
+}
