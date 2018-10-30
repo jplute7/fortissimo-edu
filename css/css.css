@@ -81,7 +81,8 @@ nav ul li ul li, nav ul li ul li a {
 
 nav .icon_container {
     float: right;
-    font-family: Snell Roundhand, cursive;
+    font-family: 'Italianno', cursive;
+    font-size: 1rem;
 }
 
 nav .icon_container:hover {
