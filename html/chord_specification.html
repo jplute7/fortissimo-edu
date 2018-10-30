@@ -1,0 +1,124 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+                <li class="instructions_button"><a class="button" href="#popup1">Need Help?</a></li>
+            </ul>
+        </nav>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Learning Chords - Instructions</h2>
+                <a class="close" href="chord_specification.html">&times;</a>
+                <div class="content">
+                    This page is meant to help you learn chords and practice them to perfection!
+                    Match the soundwave on the screen - the blue line is the goal. As you improve, so will your score.
+                    The tips will assist you in increasing your score. If you want to hear how the chord sounds, just click the play button. <br /> <br />
+                    Make sure the correct mic is selected!
+                </div>
+            </div>
+        </div>
+
+        <!-- Container for the page.. -->
+        <div id="title_box">
+            Learn to Play the C Chord
+        </div>
+        <div class="specific_chord_view">
+            <div class="chord_box">
+                <div class="vertical_container">
+                    <div class="chord_img">
+                        <img src="../assets/images/C_Major_Chord.png">
+                    </div>
+                    <div class="play_chord_btn">
+                        <button id="play_chord">Play!</button>
+                    </div>
+                    <div class="audio_controls">
+                        <p>Vol: </p>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                    <div class="chord_switch_box">
+                        <button id="back"><</button>
+                        <button id="forward">></button>
+                    </div>
+                </div>
+            </div>
+            <div class="audio_interface">
+                <div class="vertical_container">
+                    <div class="audio_comparison">
+                        <img src="../assets/images/out_of_phase.gif">
+                    </div>
+                    <div class="score_indicator">
+                        <p>
+                            <span class="score_title">Score:</span> <span class="actual_score">78%</span>
+                            <span class="tips">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tips: Watch your left hand, it's lagging behind a bit!</span>
+                        </p>
+                    </div>
+                    <div class="listening_controls">
+                        <button>Listen</button>
+                        <button>Stop Listening</button>
+                        <button>Save Listen Session</button>
+                    </div>
+                    <div class="mic_controls">
+                        <div class="mic_select">
+                            <select>
+                                <option value="0">Default Input Device</option>
+                                <option value="1">Microphone - Realtek Audio</option>
+                                <option value="2">Transmit - Plantronics Savi 7xx-M</option>
+                                <option value="3">Microphone - Razer Kraken</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

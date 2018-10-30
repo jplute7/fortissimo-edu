@@ -1,0 +1,81 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li id="active"><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Houses instrument cards... -->
+        <div id="home_cards">
+            <div id="top_column">
+                <div>
+                    <a href="guitar_hub.html"><img src="../assets/images/guitar_card.jpg"></a>
+                    <p class="hub_text">Guitar Hub</p>
+                </div>
+                <div>
+                    <a href="sax_hub.html"><img src="../assets/images/sax_card.jpg"></a>
+                    <p class="hub_text">Saxophone Hub</p>
+                </div>
+            </div>
+            <div id="bot_column">
+                <div>
+                    <a href="drumhub.html"><img src="../assets/images/drum_card.jpg"></a>
+                    <p class="hub_text">Drum Hub</p>
+                </div>
+                <div>
+                    <a href="piano_hub.html"><img src="../assets/images/piano_card.jpg"></a>
+                    <p class="hub_text">Piano Hub</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

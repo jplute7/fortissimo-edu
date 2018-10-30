@@ -1,0 +1,134 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li id="active"><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="video_page">
+            <div class="left_col">
+                <div class="chapter_list">
+                    <div class="chapter chapter_1">
+                        <input class="toggle ch_collapsible" id="ch_1_collapsible" type="checkbox">
+                        <label for="ch_1_collapsible" class="collapsible_label">Chapter 1 - Sheet Music Overview</label>
+                        <div class="collapsible_content">
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chapter chapter_2">
+                        <input class="toggle ch_collapsible" id="ch_2_collapsible" type="checkbox">
+                        <label for="ch_2_collapsible" class="collapsible_label">Chapter 2 - The Parts of the Guitar</label>
+                        <div class="collapsible_content">
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chapter chapter_3">
+                        <input class="toggle ch_collapsible" id="ch_3_collapsible" type="checkbox">
+                        <label for="ch_3_collapsible" class="collapsible_label">Chapter 3 - Learn to Play</label>
+                        <div class="collapsible_content">
+                            <div class="content">
+                                <div class="subchapter">
+                                    Learn the Strings
+                                </div>
+                                <div class="subchapter">
+                                    Fret Placement
+                                </div>
+                                <div class="subchapter">
+                                    Learn the Notes
+                                </div>
+                                <div class="subchapter">
+                                    Chords & You
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chapter chapter_4">
+                        <input class="toggle ch_collapsible" id="ch_4_collapsible" type="checkbox">
+                        <label for="ch_4_collapsible" class="collapsible_label">Chapter 4 - All About Chords</label>
+                        <div class="collapsible_content">
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chapter chapter_5">
+                        <input class="toggle ch_collapsible" id="ch_5_collapsible" type="checkbox">
+                        <label for="ch_5_collapsible" class="collapsible_label">Chapter 5 - A Song to Play</label>
+                        <div class="collapsible_content">
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_col">
+                <div class="video_title">
+                    <div class="vertical_container">
+                        <div class="text">
+                                <span id="vid_title">Learn to Play Guitar 101</span>
+                                -
+                                <span id="vid_author">Jace Plute</span>
+                        </div>
+                        <div class="star_icon">
+                            <img src="../assets/images/star_icon.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="video_view">
+                    <img src="../assets/images/video-thumbnail.jpg">
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

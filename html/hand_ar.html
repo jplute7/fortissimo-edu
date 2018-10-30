@@ -1,0 +1,127 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li id="active"><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+                <li class="instructions_button"><a class="button" href="#popup1">Need Help?</a></li>
+            </ul>
+        </nav>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Improving Hand Position - Instructions</h2>
+                <a class="close" href="hand_ar.html">&times;</a>
+                <div class="content">
+                    This page is meant to help you improve your hand positioning while you are playing the piano.
+                    Make sure to line your hands up in your camera, and then follow the on-screen prompts displayed
+                    in the virutal piano to the right. Just play along with the sheet music you chose, and you will
+                    receive a score with tips at the end of your session. Happy learning!
+                </div>
+            </div>
+        </div>
+
+        <!-- Container for the page.. -->
+        <div class="piano_ar">
+            <div id="title_box">
+                    Improve Your Hand Positioning
+            </div>
+            <div class="top_half">
+                <div class="vertical_container">
+                    <div class="controls">
+                        <button id="begin">Begin Recording</button>
+                        <button id="finish">Finish Recording</button>
+                        <div class="camera_selector">
+                            <p>Video: </p>
+                            <select>
+                                <option value="0">Default Video Device</option>
+                                <option value="1">FaceTime HD Camera</option>
+                            </select>
+                        </div>
+                        <div class="mic_selector">
+                            <p>Mic: </p>
+                            <select>
+                                <option value="0">Default Input Device</option>
+                                <option value="1">Microphone - Realtek Audio</option>
+                                <option value="2">Transmit - Plantronics Savi 7xx-M</option>
+                                <option value="3">Microphone - Razer Kraken</option>
+                            </select>
+                        </div>
+                        <div class="score">
+                            <p class="score_text">
+                                <span class="score_title">Score:</span> <span class="actual_score">94%</span><br />
+                                <span class="tips">Tips: You're doing great! Watch your left hand, it's lagging behind a bit!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sheet_music">
+                        <img src="../assets/images/sheet_music.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_half">
+                <div class="vertical_container">
+                    <div class="camera">
+                        <img src="../assets/images/piano_camera_spoof.jpg">
+                        <div class="camera_text">
+                            Make sure your camera is centered on your hands!
+                        </div>
+                    </div>
+                    <div class="virtual_piano">
+                        <img src="../assets/images/piano_overlay.jpg">
+                        <div class="vp_text">
+                            Follow the hands shown! Green means you're good!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

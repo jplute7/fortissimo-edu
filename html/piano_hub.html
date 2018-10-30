@@ -1,0 +1,94 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li id="active"><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="hub_container">
+            <div id="title_box">
+                Welcome to the Piano Hub
+            </div>
+            <div class="upper_third">
+                <!-- <div class="featured_arrow">
+                    <button><</button>
+                </div> -->
+                <div id="featured_lessons">
+                    <p>Featured Videos</p>
+                    <img class="main_image" src="../assets/images/featured_lesson_piano.jpg">
+                    <img class="secondary_image_1" src="../assets/images/featured_lesson_piano_2.jpg">
+                    <img class="secondary_image_2" src="../assets/images/featured_lesson_piano_3.jpg">
+                </div>
+                <!-- <div class="featured_arrow">
+                    <button>></button>
+                </div> -->
+            </div>
+            <div class="middle_third">
+                <button>Videos</button>
+                <button onclick="location.href='hand_ar.html'">Learn Hand Positioning!</button>
+                <button>Lessons</button>
+            </div>
+            <div class="lower_third">
+                <div id="care_for_piano">
+                    <p>How To Care For Your Instrument</p>
+                    <img src="../assets/images/video-thumbnail.jpg">
+                </div>
+                <div id="daily_piano_challenge">
+                    <p>Daily Challenge</p>
+                    <img src="../assets/images/video-thumbnail.jpg">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li id="active"><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="chord_page">
+            <div id="title_box">
+                    Learn to Play Basic Chords
+            </div>
+            <div class="chords_container">
+                <div class="top_section">
+                    <div class="chord" onclick="location.href='chord_specification.html'">
+                        <img src="../assets/images/C_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                    <div class="chord">
+                        <img src="../assets/images/A_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                    <div class="chord">
+                        <img src="../assets/images/G_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                </div>
+                <div class="bottom_section">
+                    <div class="chord">
+                        <img src="../assets/images/E_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                    <div class="chord">
+                        <img src="../assets/images/D_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                    <div class="chord">
+                        <img src="../assets/images/F_Major_Chord.png">
+                        <p>Click Me to Learn More!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sidebar for checking off chords.. -->
+            <div class="chord_sidebar">
+                <div class="chord_sidebar_content">
+                    <div id="chord_sidebar_title">
+                            <p>Check to Filter</p>
+                    </div>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>C</p>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>A</p>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>G</p>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>E</p>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>D</p>
+                    <hr>
+                    <p><input type="checkbox" class="chord_check"/>F</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

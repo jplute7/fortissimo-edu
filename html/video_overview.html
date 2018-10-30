@@ -1,0 +1,196 @@
+<!-- Home Page, post login. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Landing Page</title>
+        <link rel="icon" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="#">Tuner</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li id="active"><a href="#">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li id="active"><a href="video_overview.html">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="video_listing">
+            <div id="title_box">
+                Guitar Videos
+            </div>
+            <div class="col">
+                <div class="search_options">
+                    <div class="filtering">
+                        <div id="label">Sort By:</div>
+                        <button>Length</button>
+                        <button>Difficulty</button>
+                        <button>Author</button>
+                    </div>
+                    <div class="searching">
+                        <input type="text" placeholder="Search.." name="search" class="search_input">
+                        <button type="submit" class="search_button">Submit</button>   
+                    </div>
+                </div>
+                <div class="video_col">
+                    <div class="abs_pos">
+                        <div class="video_row" onclick="location.href='specific_video.html'">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>Learn to Play Guitar 101</p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Jace Plute</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Beginner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>How to String Your Guitar</p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Jace Plute</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Beginner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>Advanced Chord Techniques</p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Aaron Hargrove</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>Learn to Play <i>Three Little Birds</i></p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Bryce Angaran</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>8 Quick Songs for the Beginner</p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Jace Plute</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Beginner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_thumbnail">
+                                <img src="../assets/images/video-thumbnail.jpg">
+                            </div>
+                            <div class="video_info">
+                                <div class="top_row">
+                                    <p>Learn to Play <i>Master of Puppets</i></p><img src="../assets/images/star_icon.png">
+                                </div>
+                                <div class="second_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Created by Jace Plute</p>
+                                </div>
+                                <div class="third_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lesson for <span class="instrument">Guitar</span></p>
+                                </div>
+                                <div class="bottom_row">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty: Expert</p>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
