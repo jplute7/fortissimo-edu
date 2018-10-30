@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="../css/css.css">
         <title>metronome.html</title>
+        <link rel="icon" href="../assets/images/icon.png">
     </head>
 
     <body>
@@ -44,23 +45,62 @@
                             <li><a href="timingTest.html">Timing Test</a></li>
                         </ul>
                     </li>
+                    
                 </ul>
                 </li>
                 <li><a href="#">Classes</a></li>
+                <li class="icon_container" style="float: right;">fortissimo education</li>
             </ul>
         </nav>
-        <div id="over" style="position:absolute; width:100%; height:100%">
-            <div id="set" style="position:absolute; width:100%; height:100%">
-                <li>
-                    <label for="setupInput">Your BPM:</label>
-                    <input type="text" placeholder="125" id="name" name="name" tabindex="1"/>
-                </li>
-                <li>
-                    <label for="setupInput">Your Duration:</label>
-                    <input type="text" placeholder="1hr" id="name" name="name" tabindex="1"/>
-                </li>
+        
+        <div class="video_listing">
+            <div class="col">
+                <div class="video_col" style="height: 100%">
+                    <div class="abs_pos" style="height: 100%">                            
+                        <div class="video_row" style="height: 85%">
+                            <div class="video_info" style="width: 100%; height: 100%;">
+                                <div class="top_row" style="height: 100%">
+                                        <div class="video_row" style="height: 80%; width: 50%">
+                                            <div class="video_info" style="width: 100%; height: 100%;">
+                                            <div class="top_row" style="height: 30%"> 
+                                                <th>Set BPM and Duration</th>
+                                            </div>
+                                            <div class="top_row"style="height: 20%;">
+                                                    BPM:
+                                                    <form>
+                                                        <label>
+                                                            <input style="height:50%; width: 150%; font-size: 30px;">     
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="top_row"style="height: 20%;">
+                                                    Duration:
+                                                    <form>
+                                                            <label>
+                                                                <input style="height:50%; width: 128%; font-size: 30px">     
+                                                            </label>
+                                                        </form>
+                                                </div>
+                                                <div class="top_row"style="height: 20%;">
+                                                     <button style="margin: auto; height: 60px; width: 100px;">Start</button>   
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    <img src="../assets/images/bpm.JPG" style="border-radius: 50%; margin: auto; margin-top: 5%; 
+                                                                                    height: 400px; width: 400px;"> 
+                                    
+                                    </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
             </div>
-                <img src="../assets/images/bpm.JPG" style="border-radius: 50%;">
+        </div>
+                            
+
+                
             </div>
     </body>
 </html>
