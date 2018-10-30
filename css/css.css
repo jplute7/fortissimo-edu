@@ -1225,6 +1225,7 @@ select {
     font-size: 1.5rem;
     padding-top: 2.5%;
     color: white;
+    font-family: system-ui;
 }
 
 .video_listing .search_options .filtering button {
