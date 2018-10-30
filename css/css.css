@@ -3,7 +3,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
 body {
     height: 100%;
     width: 100%;
@@ -11,26 +10,22 @@ body {
     margin: 0;
     padding: 0;
 }
-
 nav {
     width: 100%;
     background-color: #076496;
     text-decoration: none;
     display: inline-block;
 }
-
 nav a {
     text-decoration: none;
     color: white;
 }
-
 nav ul {
     list-style: none;
     background: #076496;
     text-align: center;
     display: inline;
 }
-
 nav ul li {
     color: white;
     background: #076496;
@@ -43,12 +38,10 @@ nav ul li {
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
-
 nav ul li:hover {
     background: #3B90BE;
     cursor: pointer;
 }
-
 nav ul li ul {
     background: #076496;
     visibility: hidden;
@@ -63,37 +56,43 @@ nav ul li ul {
     text-align: left;
     padding: 0;
 }
-
 nav ul li:hover > ul, ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
 }
-
 nav ul li ul li, nav ul li ul li a {
     width: 100%;
 }
-
+.instructions_button {
+    float: right;
+}
+nav .icon_container {
+    float: right;
+    font-family: 'Italianno', cursive;
+    font-size: 1rem;
+}
+nav .icon_container:hover {
+    /* do nothing :) */
+    cursor: default;
+    background: #076496;
+}
 .subdropdown {
     left: 100%;
     right: 0;
     top: 0;
     margin-top: 0;
 }
-
 .arrow_container {
     text-align: right;
     float: right;
 }
-
 .arrow_text {
     display: inline;
 }
-
 #active {
     background: #054D74;
 }
-
 button:hover {
     cursor: pointer;
 }
@@ -820,7 +819,6 @@ Test Styling
     width: 5%;
     position: relative;
 }
-
 .featured_arrow > button {
     border: 0px solid white;
     background: #076496;
@@ -832,105 +830,111 @@ Test Styling
     width: 100%;
     margin: 400% 0 0 0;
 }
-
 .featured_arrow > button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background: #3B90BE;
 }
-
 .hub_container {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .hub_container > div{
     margin: 1rem auto;
     position: relative;
     display: flex;
 }
-
+#title_box {
+    justify-content: center;
+    width: 100%;
+    height: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #054D74;
+    text-align: center;
+}
 .upper_third {
     justify-content: center;
     width: 100%;
     height: 40%;
 }
-
 .middle_third {
     width: 100%;
     height: 10%;
     justify-content: space-evenly;
 }
-
 .lower_third {
     width: 100%;
     height: 40%;
     justify-content: space-between;
 }
-
 #care_for_guitar {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
-
 #daily_guitar_challenge {
-    border: 1px solid #076496;
+    /* border: 1px solid #076496; */
     display: inline-block;
     position: relative;
     width: 40%;
     height: 90%;
     margin: 0 1rem;
-    background: lightgrey;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* background: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
-
 #care_for_guitar img:hover, #daily_guitar_challenge img:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 #care_for_guitar img, #daily_guitar_challenge img {
     display: block;
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
 }
-
+#care_for_guitar p, #daily_guitar_challenge p {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #076496;
+    text-align: center;
+}
 #featured_lessons {
-    border: 1px solid #076496;
     display: inline-block;
     height: 100%;
     width: 50%;
     position: relative;
 }
-
 #featured_lessons .main_image {
+    border: 1px solid #076496;
     display: block;
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     z-index: 2;
 }
-
 #featured_lessons .main_image:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 #featured_lessons .secondary_image_1 {
     display: block;
     position: absolute;
@@ -938,13 +942,12 @@ Test Styling
     z-index: 1;
     height: 60%;
     width: 60%;
-    bottom: 30%;
+    bottom: 20%;
     left: 80%;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
 }
-
 #featured_lessons .secondary_image_2 {
     display: block;
     position: absolute;
@@ -952,26 +955,24 @@ Test Styling
     z-index: 1;
     height: 60%;
     width: 60%;
-    bottom: 30%;
+    bottom: 20%;
     right: 80%;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
 }
-
 #featured_lessons .secondary_image_1:hover, #featured_lessons .secondary_image_2:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
-
 #featured_lessons p {
-    position: absolute;
-    color: white;
-    bottom: 2%;
-    left: 4%;
-    font-size: 20px;
+    color: #076496;
+    font-size: 2rem;
     z-index: 2;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    text-align: center;
 }
-
 .middle_third > button {
     position: relative;
     height: 100%;
@@ -982,8 +983,8 @@ Test Styling
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     color: white;
+    font-size: 2rem;
 }
-
 .middle_third > button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background: #3B90BE;
