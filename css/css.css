@@ -856,6 +856,7 @@ Home Page Styling
     border: 1px solid #076496;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    marign-top: 2%;
 }
 
 .piano_ar .top_half .vertical_container .sheet_music {
@@ -1241,9 +1242,9 @@ select {
 
 .video_listing .search_options .filtering {
     position: relative;
-    width: 45%;
+    width: 40%;
     height: 90%;
-    background: #076496;
+    background: #054D74;
     top: 5%;
     display: flex;
 }
@@ -1261,6 +1262,7 @@ select {
     padding-top: 2.5%;
     color: white;
     font-family: system-ui;
+    text-decoration: underline;
 }
 
 .video_listing .search_options .filtering button {
@@ -1281,7 +1283,7 @@ select {
 
 .video_listing .search_options .searching {
     position: relative;
-    width: 50%;
+    width: 55%;
     height: 90%;
     background: teal;
     display: flex;
@@ -3477,6 +3479,7 @@ button:hover {
 .audio_interface .score_indicator {
     text-align: center;
     color: white;
+    background: #3B90BE;
 }
 
 .audio_interface .score_indicator p {
@@ -3503,11 +3506,12 @@ button:hover {
     margin: 0 auto;
     position: relative;
     display: flex;
-    background: #076496;
+    background: #3B90BE;
     margin-bottom: 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.5s ease;
     transition-duration: 0.5s;
+    border: 1px solid #076496;
 }
 
 .audio_interface .listening_controls {
@@ -3704,6 +3708,7 @@ button:hover {
     border: 1px solid #076496;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 2%;
 }
 
 .piano_ar .top_half .vertical_container .sheet_music {
@@ -4087,52 +4092,12 @@ select {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.video_listing .search_options .filtering {
-    position: relative;
-    width: 45%;
-    height: 90%;
-    background: #076496;
-    top: 5%;
-    display: flex;
-}
-
 #options {
     cursor: pointer;
 }
 
-#label {
-    width: 25%;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    font-size: 1.5rem;
-    padding-top: 2.5%;
-    color: white;
-}
-
-.video_listing .search_options .filtering button {
-    width: 25%;
-    height: 100%;
-    position: relative;
-    border: 1px solid #054D74;
-    background: #076496;
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
-}
-
 .video_listing .search_options .filtering button:hover {
     background: #054D74;
-}
-
-.video_listing .search_options .searching {
-    position: relative;
-    width: 50%;
-    height: 90%;
-    background: teal;
-    display: flex;
-    top: 5%;
 }
 
 .video_listing .search_options .searching .search_input {
@@ -4818,7 +4783,8 @@ h1{
 
 #nav1 .icon_container {
     float: right;
-    font-family: Snell Roundhand, cursive;
+    font-family: 'Italianno', cursive;
+    font-size: 0.7rem;
 }
 
 #nav1 .icon_container:hover {
@@ -4964,4 +4930,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     max-height: 30%;
     overflow: auto;
   }
+
+  .instructions_button {
+    float: right;
+}
   
