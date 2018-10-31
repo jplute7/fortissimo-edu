@@ -1,0 +1,87 @@
+<!-- Sax Hub Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Saxophone Hub</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lesson_home.html">Learning Hub</a></li>
+                <li><a href="tuner_by_note.html">Tuner</a></li>
+                <li><a href="video_overview.html">Favorites</a></li>
+                <li><a href="home.html">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li id="active"><a href="sax_hub.html">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="sax_leak_begin.html">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Container for the page.. -->
+        <div class="hub_container">
+            <div class="upper_third">
+                <div class="featured_arrow">
+                    <button><</button>
+                </div>
+                <div id="featured_lessons">
+                    <img class="main_image" src="../assets/images/sax2.jpg">
+                    <p>Check out this new featured video!</p>
+                    <img class="secondary_image_1" src="../assets/images/sax3.jpg">
+                    <img class="secondary_image_2" src="../assets/images/sax.jpg">
+                </div>
+                <div class="featured_arrow">
+                    <button>></button>
+                </div>
+            </div>
+            <div class="middle_third">
+                <button>Videos</button>
+                <button onclick="location.href='chord_overview.html'">Leak Detector</button>
+                <button onclick="location.href='lesson_shops.html'">Lessons</button>
+            </div>
+            <div class="lower_third">
+                <div id="care_for_guitar">
+                    <img src="../assets/images/video-thumbnail.jpg">
+                </div>
+                <div id="daily_guitar_challenge">
+                    <img src="../assets/images/video-thumbnail.jpg">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

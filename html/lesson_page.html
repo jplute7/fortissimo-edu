@@ -1,0 +1,123 @@
+<!-- Lesson Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/css.css">
+        <title>Lesson: Example 123</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lesson_home.html">Learning Hub</a></li>
+                <li><a href="tuner_by_note.html">Tuner</a></li>
+                <li><a href="video_overview.html">Favorites</a></li>
+                <li><a href="home.html">Instruments</a>
+                <ul class="dropdown">
+                    <li><a href="piano_hub.html">Piano</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="hand_ar.html">Hand Positioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sax_hub.html">Saxophone</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="sax_leak_begin.html">Check Pads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guitar_hub.html">Guitar</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="chord_overview.html">Learn Chords</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drums</a><div class="arrow_container"><p class="arrow_text">></p></div>
+                        <ul class="dropdown subdropdown">
+                            <li><a href="video_overview.html">Videos</a></li>
+                            <li><a href="lesson_shops.html">Lessons</a></li>
+                            <li><a href="#">Timing Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Classes</a></li>
+                <li class="icon_container">fortissimo education</li>
+            </ul>
+        </nav>
+
+        <!-- Lesson Content -->
+        <div class="lesson_example">
+            <div id="top">
+                <div class="chapter">
+                    <div class="main">
+                        <p>Chapter 1</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 2</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 3</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 4</p>
+                    </div>
+                    <div class="main">
+                        <p>Chapter 5</p>
+                    </div>
+                    <div class="sub">
+                        <p>5a</p>
+                    </div>
+                    <div class="sub">
+                        <p>5b</p>
+                    </div>
+                    <div class="sub">
+                        <p>5c</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="../assets/images/video-thumbnail.jpg" id="thumbnail">
+                </div>
+                <div class="directions">
+                    <P id="lessontitle">Lesson: Example 123</P>
+                    <p id="dirTitle">Directions:</p>
+                    <P id="dir">Play the music below. Do your best to hit every note, and keep going if you mess up.
+                        Remember, accents and dynamics are factored into your score. To get full credit, you must 
+                        play the music at least at 120 BPM.<br><br>
+                        Hit record to start recording yourself playing, and hit stop when you are done. You may listen 
+                        to your recording, and restart if you are not happy with it.
+                    </P>
+                </div>
+            </div>
+            <div id="musicControlContainer">
+                    <button type="button">Record</button>
+                    <button type="button">Stop</button>
+                    <button type="button">Play Recording</button>
+                    <button type="button">Restart</button>
+            </div>
+            <div id="sheetMusic">
+                    <img src="../assets/images/sheetMusic.jpg">
+            </div>
+            <div id="bottomdiv">
+                <span id="acc">
+                    <label class="container">Music Accompaniment
+                        <input type="checkbox" checked="checked">
+                    </label>
+                </span>
+                <span id="tempo">
+                    <span id="tempoNum">120</span>
+                    <span id="sliderContainer">
+                            <input type="range" min="30" max="240" value="120" class="slider">
+                    </span>
+                </span>
+            </div>
+        </div>
+        
+    </body>
+</html>
