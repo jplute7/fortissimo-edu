@@ -234,6 +234,32 @@ Home Page Styling
 #top_column div:hover, #bot_column div:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.swap_user_base {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.swap_user_base button {
+    width: 45%;
+    height: 95%;
+    margin: auto 0;
+    position: relative;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+    font-size: 1.5rem;
+}
+
+.swap_user_base button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3B90BE;
+}
 /* End Home Post-Login Styling */
 
 /* Piano Hub Styling */
