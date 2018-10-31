@@ -2135,7 +2135,7 @@ h1{
 }
 
 .class_options .filtering button:hover {
-    background: #054D74;
+    background: rgb(204, 109, 1);
 }
 h2{
     position: relative;
