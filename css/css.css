@@ -4849,10 +4849,10 @@ select {
     width: 100%;
 }
 
-#nav1 .icon_container {
+/* #nav1 .icon_container {
     float: right;
     font-family: Snell Roundhand, cursive;
-}
+} */
 
 #nav1 .icon_container:hover {
     /* do nothing :) */
