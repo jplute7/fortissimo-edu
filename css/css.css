@@ -191,6 +191,18 @@ Home Page Styling
     position: absolute;
 }
 
+#home_cards p {
+    position: relative;
+    top: 0%;
+    color: white;
+    background: #076496;
+    font-size: 2rem;
+}
+
+#home_cards p:hover {
+    cursor: pointer;
+}
+
 #top_column {
     margin: 1rem auto;
     width: 90%;
