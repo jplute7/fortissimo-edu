@@ -23,6 +23,7 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+    font-size: 1.1rem;
 }
 
 nav ul {
@@ -412,6 +413,9 @@ Home Page Styling
     border: 1px solid #076496;
     width: 30%;
     margin: auto 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
 }
 
 .chord img {
@@ -419,12 +423,9 @@ Home Page Styling
     position: relative;
     height: 93%;
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.5s ease;
-    transition-duration: 0.5s;
 }
 
-.chord img:hover {
+.chord:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
 }
@@ -659,7 +660,7 @@ Home Page Styling
 }
 
 .audio_interface .tips {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .audio_interface .score_indicator {
@@ -1006,7 +1007,7 @@ Home Page Styling
 }
 
 .piano_ar .top_half .score .tips {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 select {
@@ -3509,7 +3510,7 @@ button:hover {
 }
 
 .audio_interface .tips {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .audio_interface .score_indicator {
@@ -3857,7 +3858,7 @@ button:hover {
 }
 
 .piano_ar .top_half .score .tips {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 select {
@@ -4741,6 +4742,7 @@ h1{
 #nav1 a {
     text-decoration: none;
     color: white;
+    font-size: 1.1rem;
 }
 
 #nav1 ul {
@@ -4924,6 +4926,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
+    font-size: 2rem;
   }
   .popup .close {
     position: absolute;
@@ -4941,9 +4944,60 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   .popup .content {
     max-height: 30%;
     overflow: auto;
+    font-size: 1.2rem;
   }
 
   .instructions_button {
     float: right;
+}
+
+#need_help {
+    position: absolute;
+    top: 2%;
+    right: 2.5%;
+    width: 10%;
+    height: 3%;
+}
+
+#need_help button {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+    font-size: 1rem;
+}
+
+#need_help button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#need_help2 {
+    position: absolute;
+    top: 9%;
+    right: 2%;
+    width: 10%;
+    height: 3%;
+}
+
+#need_help2 button {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: #076496;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+    border: 0px solid black;
+    font-size: 1rem;
+}
+
+#need_help2 button:hover {
+    background: #3B90BE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
   
