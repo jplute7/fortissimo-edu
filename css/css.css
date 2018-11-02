@@ -1517,6 +1517,11 @@ Tuner Page Styling
     width: 60%;
     height: 25%;
     margin: 0 auto;
+    background-color: #3B90BE;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border: 3px solid rgb(93, 178, 224);
+    padding-top: .002%;
+    margin-top: 1%;
 }
 
 .tuner_content .home_image {
@@ -1529,6 +1534,8 @@ Tuner Page Styling
     margin-top: 10%;
     margin-bottom: 15%;
     padding-bottom: 2%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .tuner_view div.select label {
@@ -1542,6 +1549,8 @@ Tuner Page Styling
 .tuner_view .tuner_function p.note {
     text-align: center;
     font-size: 600%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
     margin-bottom: 15%;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
@@ -1549,6 +1558,8 @@ Tuner Page Styling
 .tuner_view .sound_indicator{
     text-align: center;
     margin-bottom: 3%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .tuner_view .sound_indicator p.input {
     text-align: center;
@@ -1566,6 +1577,8 @@ Tuner Page Styling
 .tuner_view .pitch_indicator{
     text-align: center;
     margin-bottom: 2%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .tuner_view .pitch_indicator p.input {
@@ -1580,6 +1593,7 @@ Tuner Page Styling
     height: 1.2rem;
 }
 /* End tuner page styling */
+
 
 
 /* 
@@ -1729,10 +1743,9 @@ Example Lesson Page Styling
 
 .lesson_example #top .chapter .sub{
     width: 70.2%;
-    height: 11%;
+    height: 10.7%;
     text-align: center;
     background-color: #3B90BE;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border: .5px solid #076496;
     vertical-align: middle;
     display: table;
@@ -1773,9 +1786,15 @@ Example Lesson Page Styling
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.lesson_example #top .directions #dirTitle{
+.lesson_example #top .directions #sel{
     margin-left: 2%;
     font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.lesson_example #top .directions #dirTitle{
+    margin-left: 2%;
+    font-size: 170%;
+    font-weight: bold;
 }
 .lesson_example #top .directions #dir{
     margin-left: 2%;
@@ -2050,11 +2069,11 @@ Test Styling
     background-color: #3B90BE;
     color: white;
     width: 90%;
-    height: 25%;
+    height: 30%;
     margin-bottom: .5%;
 }
 #play_test #musicControlContainer{
-    height: 10%;
+    height: 7%;
     width: 90%;
     margin: 0 auto;
     margin-top: 1.5%;
@@ -2079,7 +2098,7 @@ Test Styling
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 5px 10px 0 rgba(0,0,0,0.1);
 }
 #play_test #sheetMusic{
-    height: 70%;
+    height: 50%;
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -2097,7 +2116,7 @@ Test Styling
     height: 5%;
     width: 90%;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 6%;
     text-align: center;
     vertical-align: middle;
     display:table table-cell;
@@ -3020,6 +3039,7 @@ Lesson Shop Styling
     height: 70%;
     margin: 1%;
     margin-top: 5%;
+    padding-left: 3%;
 }
 #shop_content #lesson_category .lesson span {
     display: inline-block;
@@ -3035,7 +3055,7 @@ Lesson Shop Styling
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
     font-size: 190%;
-    padding-left: 1%;
+    padding-left: 3%;
     padding-top: 1%;
     margin: 0;
     color: white;
