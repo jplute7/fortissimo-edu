@@ -4972,10 +4972,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 #need_help {
     position: absolute;
-    top: 2%;
+    top: 1.5%;
     right: 2.5%;
-    width: 10%;
-    height: 3%;
+    width: 15%;
+    height: 4%;
 }
 
 #need_help button {
@@ -4987,7 +4987,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #need_help button:hover {
@@ -4997,10 +4997,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 #need_help2 {
     position: absolute;
-    top: 9%;
+    top: 7%;
     right: 2%;
-    width: 10%;
-    height: 3%;
+    width: 15%;
+    height: 6%;
 }
 
 #need_help2 button {
@@ -5012,7 +5012,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     transition: all 0.5s ease;
     transition-duration: 0.5s;
     border: 0px solid black;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 
 #need_help2 button:hover {
